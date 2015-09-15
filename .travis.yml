@@ -3,14 +3,18 @@ node_js:
 - '0.12'
 services:
   - mongodb
+env:
+- SKIP=0 LIMIT=1000000
+- SKIP=1000000 LIMIT=1000000
+- SKIP=2000000 LIMIT=1000000
 
 before_deploy:
 - df -m
 - wget https://dumps.wikimedia.org/enwiktionary/latest/enwiktionary-latest-pages-articles-multistream.xml.bz2
 - bzip2 -d enwiktionary-latest-pages-articles-multistream.xml.bz2
 - ls
-- node --harmony index.js enwiktionary-latest-pages-articles-multistream.xml
-- mongoexport --db wiktionaryToMongo --collection wiktionaryDump |bzip2 > enWiktionaryDump.json.bz2
+- node --harmony index.js enwiktionary-latest-pages-articles-multistream.xml --limit $LIMIT --skip $SKIP
+- mongoexport --db wiktionaryToMongo --collection wiktionaryDump |bzip2 > "enWiktionaryDump_offset_"+$SKIP+".json.bz2"
 deploy:
   provider: releases
   api_key:

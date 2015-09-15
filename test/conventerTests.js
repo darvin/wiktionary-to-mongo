@@ -40,7 +40,6 @@ describe('conventer', function() {
         countSaved:3
       });
       collection.find({}, {title: 1, namespace:1}).toArray(function(err, docs){
-        console.log(docs);
         var docs = docs.map(function(i){
           return {
             title:i.title,
@@ -48,7 +47,6 @@ describe('conventer', function() {
           }
         });
 
-        console.log(JSON.stringify(docs, 2));
         expect(docs).to.deep.include.members([
           {"title":"ǵʰuto-","namespace":"ine-pro"},
           {"title":"dictionary","namespace":null},
@@ -60,10 +58,10 @@ describe('conventer', function() {
 
   it('should respect skip', function (done) {
     this.timeout(10000);
-    wiktionaryToMongo.loadWiktDumpToMongo(db, fixturePath, {skip:5}, function(err, r){
+    wiktionaryToMongo.loadWiktDumpToMongo(db, fixturePath, {skip:6}, function(err, r){
       expect(r).eql({
         count:7,
-        countSaved:2
+        countSaved:1
       });
       done();
     });
@@ -71,7 +69,7 @@ describe('conventer', function() {
 
   it('should respect limit', function (done) {
     this.timeout(10000);
-    wiktionaryToMongo.loadWiktDumpToMongo(db, fixturePath, {limit:6}, function(err, r){
+    wiktionaryToMongo.loadWiktDumpToMongo(db, fixturePath, {limit:5}, function(err, r){
       expect(r).eql({
         count:6,
         countSaved:1
@@ -82,9 +80,9 @@ describe('conventer', function() {
 
   it('should respect skip and limit', function (done) {
     this.timeout(10000);
-    wiktionaryToMongo.loadWiktDumpToMongo(db, fixturePath, {skip:2, limit:3}, function(err, r){
+    wiktionaryToMongo.loadWiktDumpToMongo(db, fixturePath, {skip:5, limit:2}, function(err, r){
       expect(r).eql({
-        count:5,
+        count:7,
         countSaved:2
       });
       done();

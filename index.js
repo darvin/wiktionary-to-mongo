@@ -21,6 +21,7 @@ function loadDb(callback) {
 
 var loadWiktDumpToMongo = function (db, file, opts, callback) {
   opts.skip = opts.skip || 0;
+  opts.limit = opts.limit || 0;
   var stream = fs.createReadStream(file);
   var count = 0;
   var countSaved = 0;
@@ -35,10 +36,12 @@ var loadWiktDumpToMongo = function (db, file, opts, callback) {
   var statusLoggingInterval = setInterval(function() {
     process.stdout.clearLine();  // clear current text
     process.stdout.cursorTo(0);  // move cursor to beginning of line
-
-    var verb = opts.count<opts.skip ? "Skipping" : "Processing";
-
-    process.stdout.write(verb + " document" + count);  // write text
+    if (!inputFinished || outputQueue.size>0) {
+      var verb = opts.count<opts.skip ? "Skipping" : "Processing";
+      process.stdout.write(verb + " document" + count);  // write text
+    } else {
+      process.stdout.write("Processed: "+count +" Saved: "+countSaved);
+    }
   }, 1000);
 
   var inputFinished = false;
@@ -46,61 +49,75 @@ var loadWiktDumpToMongo = function (db, file, opts, callback) {
 
 
   var quitIfDone = function(){
-    console.log("Truijn to quit ", inputFinished, outputQueue.size);
-    if (inputFinished && outputQueue.size==0){
-      console.log("quit");
-      clearInterval(statusLoggingInterval);
-      callback(null, {
-        count:count,
-        countSaved:countSaved
-      });
+    if (inputFinished) { //already quitting
+      return;
     }
-  }
+    inputFinished = true;
+    setTimeout(function() {
+
+      var quittingInterval = setInterval(function() {
+        if (inputFinished && outputQueue.size==0){
+          clearInterval(quittingInterval);
+          clearInterval(statusLoggingInterval);
+          callback(null, {
+            count:count,
+            countSaved:countSaved
+          });
+        }
+      }, 400);
+
+    }, 2000);
+  };
 
 
   xml.on('endElement: page', function(page) { 
+    if (inputFinished)
+      return;
+    outputQueue.add(page.title);
+    var finish = function(){
+      outputQueue.delete(page.title);
+    }
+    
+    count ++; 
+    if (opts.limit>0&& (count>(opts.skip+opts.limit))) {
+      finish();
+      quitIfDone();
+      return;
+    } 
+    if (count<=opts.skip) {
+      finish();
+      return;
+    }
 
-      if (!inputFinished) {
-        count ++; 
-      } 
-      if (opts.limit&& (count>=opts.skip+opts.limit)) {
-        inputFinished = true; 
-        quitIfDone();
+    var namespaceName = null;
+    var title = page.title;
+    if (page.ns!="0") {
+      namespaceName = page.title.split("/")[0];
+      title = page.title.split("/")[1];
+    }
 
-      } else if (count>opts.skip && !opts.justCount) {
-        var namespaceName = null;
-        var title = page.title;
-        if (page.ns!="0") {
-          namespaceName = page.title.split("/")[0];
-          title = page.title.split("/")[1];
-        }
+    if(namespaceName==null ||
+      wictionaryParser.getSpecialNamespaces().hasOwnProperty(namespaceName)){
+      var script=page.revision.text["$text"] || '';
+      var ns = wictionaryParser.getLangCodeForNamespace(namespaceName)||null;
 
-        if(namespaceName==null ||
-          wictionaryParser.getSpecialNamespaces().hasOwnProperty(namespaceName)){
-            var script=page.revision.text["$text"] || '';
-            var ns = wictionaryParser.getLangCodeForNamespace(namespaceName)||null;
-
-            
-            var doc = {
-              title:title,
-              text:script,
-              namespace:ns
-            }
-
-            // console.log("doc", doc);
-            var idd = title+"|"+ns;
-            outputQueue.add(idd);
-            collection.insert(doc, function(err, r){
-              outputQueue.delete(idd);
-              countSaved ++;
-              quitIfDone();
-            });
-            if (verbose) {
-              // console.log("Written to db: ", prettyjson.render(r));
-
-            }
-        } 
+      
+      var doc = {
+        title:title,
+        text:script,
+        namespace:ns
       }
+
+      // console.log("doc", doc);
+
+      collection.insert(doc, function(err, r){
+        countSaved ++;
+        finish();
+      });
+    } else {
+      finish();
+    }
+
   });
 
   xml.on('error', function(message) {
@@ -108,8 +125,8 @@ var loadWiktDumpToMongo = function (db, file, opts, callback) {
   });
 
   xml.on('end', function(message) {
-    console.log('Dump processing finished')
-    inputFinished = true;
+    quitIfDone();
+
   });
 
 
