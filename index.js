@@ -22,7 +22,6 @@ comongo.configure({
 });
 
 var loadWiktDumpToMongo = function *(file, skip,limit, show, verbose, justCount) {
-  console.log("1");
   var stream = fs.createReadStream(file);
 
   var count = 0;
@@ -35,9 +34,41 @@ var loadWiktDumpToMongo = function *(file, skip,limit, show, verbose, justCount)
   xml._preserveAll=true //keep newlines
   // xml.preserve('text');
 
+
+
+  var statusLoggingInterval = setInterval(function() {
+    process.stdout.clearLine();  // clear current text
+    process.stdout.cursorTo(0);  // move cursor to beginning of line
+
+    var verb = count<skip ? "Skipping" : "Processing";
+
+    process.stdout.write(verb + " document" + count);  // write text
+  }, 1000);
+
+  var quitting = false;
+
+  var waitAndQuit = function() {
+    if (quitting) {
+      return;
+    }
+    quitting = true;
+    setTimeout(function*(){ //let the remaining async writes finish up
+      console.log("Quitting...");
+      yield db.close();
+      process.quit();
+    },6000)
+  }
+
+
   xml.on('endElement: page', function(page) { 
     co(function *() {
-      try {
+      if (!quitting) {
+        count ++; 
+
+      }
+      if (count>=skip+limit) {
+        waitAndQuit(); 
+      } else if (count>skip && !justCount) try {
         var namespaceName = null;
         var title = page.title;
         if (page.ns!="0") {
@@ -46,23 +77,7 @@ var loadWiktDumpToMongo = function *(file, skip,limit, show, verbose, justCount)
         }
 
         if(namespaceName==null ||
-          wictionaryParser.getSpecialNamespaces().hasOwnProperty(namespaceName)
-          ){
-          count ++;
-          if (verbose) {
-            console.log("input article #", count, title);
-
-          }
-          if (count>=skip+limit) {
-            process.exit();
-          } else if (count<skip) {
-
-          } else if (justCount) {
-            if (count%1000==0) {
-              console.log("Counting: ",count);
-            }
-
-          } else {
+          wictionaryParser.getSpecialNamespaces().hasOwnProperty(namespaceName)){
             var script=page.revision.text["$text"] || '';
             var ns = wictionaryParser.getLangCodeForNamespace(namespaceName)||null;
             if (script.length<3000&&skipSmall) {
@@ -76,23 +91,23 @@ var loadWiktDumpToMongo = function *(file, skip,limit, show, verbose, justCount)
             }
 
             // console.log("doc", doc);
-            if (count%1000==0) {
-              console.log("Writting to db: ",count);
-            }
+            
             var r = yield collection.insert(doc);
             if (verbose) {
               // console.log("Written to db: ", prettyjson.render(r));
 
             }
-            
-          }
         } else if (namespaceName) {
           if (verbose) {
             // console.log("Article from ignored namespace: ", namespaceName);
           }
         }
       } catch (err) {
-        console.log(page.title, "error:", err);
+        if (err.name=="MongoError" && err.code==11000) {
+          //dup, its ok
+        } else {
+          console.log(page.title, "error:", err);
+        }
 
       }
     });
@@ -100,14 +115,12 @@ var loadWiktDumpToMongo = function *(file, skip,limit, show, verbose, justCount)
 
   xml.on('error', function*(message) {
     console.log('Parsing as ' + (encoding || 'auto') + ' failed: ' + message);
-    yield db.close();
+    waitAndQuit();
   });
 
   xml.on('end', function(message) {
-    console.log('=================done========')
-    setTimeout(function*(){ //let the remaining async writes finish up
-      yield db.close();
-    },3000)
+    console.log('Dump processing finished')
+    waitAndQuit();
   });
 
 }
@@ -138,7 +151,7 @@ var main = function(){
     console.log("starting");
     console.log("params: ", file, skip,limit, show, verbose, justCount);
     yield loadWiktDumpToMongo(file, skip,limit, show, verbose, justCount);
-    console.log("done");
+
   }).catch(onerror);
 }
 
