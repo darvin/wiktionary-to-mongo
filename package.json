@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/darvin/wiktionary-to-mongo.git"
+    "url": "https://github.com/darvin/wiktionary-to-mongo.git"
   },
   "keywords": [
     "wiktionary",
@@ -22,7 +22,7 @@
   "homepage": "https://github.com/darvin/wiktionary-to-mongo#readme",
   "dependencies": {
     "co": "^4.6.0",
-    "co-mongo": "git@github.com:darvin/co-mongo.git",
+    "co-mongo": "https://github.com/darvin/co-mongo.git",
     "jison": "^0.4.15",
     "mongodb": "*",
     "prettyjson": "^1.1.3",
