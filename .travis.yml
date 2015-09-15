@@ -3,10 +3,21 @@ node_js:
 - '0.12'
 services:
   - mongodb
+
 env:
-- SKIP=0 LIMIT=1000000
-- SKIP=1000000 LIMIT=1000000
-- SKIP=2000000 LIMIT=1000000
+  global:
+  	- COUNT=1000000
+    - SKIP=PART*COUNT
+    - LIMIT=COUNT
+  matrix:
+    - PART=0
+    - PART=1
+    - PART=2
+    - PART=3
+
+
+before_script:
+- echo "processing part" $PART " skip:" $SKIP " limit:" $LIMIT
 
 before_deploy:
 - df -m
@@ -14,7 +25,7 @@ before_deploy:
 - bzip2 -d enwiktionary-latest-pages-articles-multistream.xml.bz2
 - ls
 - node --harmony index.js enwiktionary-latest-pages-articles-multistream.xml --limit $LIMIT --skip $SKIP
-- mongoexport --db wiktionaryToMongo --collection wiktionaryDump |bzip2 > "enWiktionaryDump_offset_"+$SKIP+".json.bz2"
+- mongoexport --db wiktionaryToMongo --collection wiktionaryDump |bzip2 > "enWiktionaryDump_part_"+$PART+".json.bz2"
 deploy:
   provider: releases
   api_key:
