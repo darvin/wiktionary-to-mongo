@@ -17,7 +17,12 @@ env:
 before_script:
 - export SKIP=PART*COUNT
 - export LIMIT=COUNT
-- echo "processing part" "$PART" " skip:" "$SKIP" " limit:" "$LIMIT"
+- echo "processing part" 
+- echo "$PART" 
+- echo " skip:" 
+- echo "$SKIP" 
+- echo " limit:"
+- echo "$LIMIT"
 
 before_deploy:
 - df -m
