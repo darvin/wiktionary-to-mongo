@@ -9,20 +9,15 @@ env:
     - COUNT=1000000
   matrix:
     - PART=0
-    - PART=1
-    - PART=2
-    - PART=3
+    # - PART=1
+    # - PART=2
+    # - PART=3
 
 
 before_script:
 - export SKIP=PART*COUNT
 - export LIMIT=COUNT
-- echo "processing part" 
-- echo "$PART" 
-- echo " skip:" 
-- echo "$SKIP" 
-- echo " limit:"
-- echo "$LIMIT"
+- echo "processing part"  $PART  " skip:"   $SKIP  " limit:" $LIMIT
 
 before_deploy:
 - df -m
