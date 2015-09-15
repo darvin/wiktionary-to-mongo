@@ -15,8 +15,8 @@ env:
 
 
 before_script:
-- export SKIP=$PART*$COUNT
-- export LIMIT=COUNT
+- export SKIP=$(( $PART*$COUNT ))
+- export LIMIT=$COUNT
 
 before_deploy:
 - df -m
