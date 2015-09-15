@@ -1,10 +1,15 @@
 language: node_js
 node_js:
-  - "0.12"
-
-
+- '0.12'
 after_success:
- - wget https://dumps.wikimedia.org/enwiktionary/latest/enwiktionary-latest-pages-articles-multistream.xml.bz2
- - bzip2 -d
- - ls
- - ./index.js enwiktionary-latest-pages-articles-multistream.xml
+- wget https://dumps.wikimedia.org/enwiktionary/latest/enwiktionary-latest-pages-articles-multistream.xml.bz2
+- bzip2 -d
+- ls
+- ./index.js enwiktionary-latest-pages-articles-multistream.xml
+deploy:
+  provider: releases
+  api_key:
+    secure: FXylkaESb2GNkzafAyZAvlzuoXPMoIIZNNTE79PyGQf5p9zgFiXFK+4PcqPovgc/YMh03nB+lUGtF/Nfk9ATQE5ovXNf7/bovrTZ52YIr+4Kt2uGUdYDpvOV5wy7bs5i+lfJlxeLbSC7dkz/qbDmj5KQJAAzZyEti+fAvxQ3WeezpMSbeRc8e6Jm59rBcLUoCQ/QsxFE8+3nPUMuCKqWogfx0dtGnHkdOgP532kIQBts3LZHgjpWd2YkCOEJa7VVcfvOGX4Clwr0bq3GULmFeOZ0ksucUBG8wIkA/uddcemTmg5/8mfZ+NyOiR9l/kpUIuhfi9sPKGzVQw5mdPcZAjH/JR5aUxPoYRO1+RTTK99RVcA2pLc4pe4L1IEJOZQguNbTZPzftF6OtDFS9uuV1LQExjzmC+bTR6D/Uv9CXVEbspOnRnvOHBMQqxF8ERMYpcELOVw7usLHP/rOZrKwuqHg3NfgzGaCyy1pYLp8+eMl6FdJ8MzEGysmJvmkIHfEgjNxwXmaod1kYb3yv+CvspGnQPweGncejABn0bESGPYt4RLE1TR0q1H3gYbbHg9Lfuy13mjBxa22RpJBsHTSkorRhF+Qvmy2ALtMrYS/mr6GHEZtrW+odfkICc8jKJw7Z1+8LqjV7j0r5QwniupGli/JGM54/+KHSH3EygRRnjk=
+  file: wiktionaryDump.bson.bz2
+  on:
+    repo: darvin/wiktionary-to-mongo
