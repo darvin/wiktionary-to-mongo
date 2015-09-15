@@ -6,18 +6,17 @@ services:
 
 env:
   global:
-    - COUNT=1000000
+    - COUNT=100
   matrix:
     - PART=0
-    # - PART=1
-    # - PART=2
+    - PART=1
+    - PART=2
     # - PART=3
 
 
 before_script:
 - export SKIP=PART*COUNT
 - export LIMIT=COUNT
-- echo "processing part"  $PART  " skip:"   $SKIP  " limit:" $LIMIT
 
 before_deploy:
 - df -m
