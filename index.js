@@ -112,8 +112,8 @@ var loadWiktDumpToMongo = function *(file, skip,limit, show, verbose, justCount)
 
 }
 
-module.exports = loadWiktDumpToMongo;
 
+exports.loadWiktDumpToMongo = loadWiktDumpToMongo;
 
 var skipSmall = argv.skip_small;
 var skip = argv.skip;

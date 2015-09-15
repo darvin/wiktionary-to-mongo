@@ -25,7 +25,7 @@ describe('conventer', function() {
     yield collection.drop();
   });
   it('should convert dump fixture to mongo', function *() {
-    var result = yield wiktionaryToMongo(path.join(__dirname, "fixtures", "enwictionary-beginning.xml"));
+    var result = yield wiktionaryToMongo.loadWiktDumpToMongo(path.join(__dirname, "fixtures", "enwictionary-beginning.xml"));
     var db = yield comongo.get();
     var collection = db.wiktionaryDump;
     var documents = yield collection.find({}, {title: 1, namespace:1}).toArray();
@@ -41,7 +41,9 @@ describe('conventer', function() {
       {"title":"ǵʰuto-","namespace":"ine-pro"},
       {"title":"dictionary","namespace":null},
       {"title":"august","namespace":null}]);
-
   });
+
+  
+
     
 });
