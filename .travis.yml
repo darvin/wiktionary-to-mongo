@@ -9,7 +9,7 @@ before_deploy:
 - wget https://dumps.wikimedia.org/enwiktionary/latest/enwiktionary-latest-pages-articles-multistream.xml.bz2
 - bzip2 -d enwiktionary-latest-pages-articles-multistream.xml.bz2
 - ls
-- node --harmony index.js enwiktionary-latest-pages-articles-multistream.xml --limit 3000
+- node --harmony index.js enwiktionary-latest-pages-articles-multistream.xml
 - mongoexport --db wiktionaryToMongo --collection wiktionaryDump |bzip2 > enWiktionaryDump.json.bz2
 deploy:
   provider: releases
