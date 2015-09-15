@@ -1,7 +1,10 @@
 language: node_js
 node_js:
 - '0.12'
-after_success:
+services:
+  - mongodb
+
+before_deploy:
 - wget https://dumps.wikimedia.org/enwiktionary/latest/enwiktionary-latest-pages-articles-multistream.xml.bz2
 - bzip2 -d
 - ls
