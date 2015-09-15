@@ -5,6 +5,7 @@ services:
   - mongodb
 
 before_deploy:
+- df -m
 - wget https://dumps.wikimedia.org/enwiktionary/latest/enwiktionary-latest-pages-articles-multistream.xml.bz2
 - bzip2 -d
 - ls

@@ -19,7 +19,7 @@ comongo.configure({
 
 describe('conventer', function() {
   	
-  before(function *() {
+  after(function *() {
     var db = yield comongo.get();
     var collection = db.wiktionaryDump;
     yield collection.drop();
