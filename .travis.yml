@@ -17,15 +17,15 @@ env:
 before_script:
 - export SKIP=PART*COUNT
 - export LIMIT=COUNT
-- echo "processing part" $PART " skip:" $SKIP " limit:" $LIMIT
+- echo "processing part" "$PART" " skip:" "$SKIP" " limit:" "$LIMIT"
 
 before_deploy:
 - df -m
 - wget https://dumps.wikimedia.org/enwiktionary/latest/enwiktionary-latest-pages-articles-multistream.xml.bz2
 - bzip2 -d enwiktionary-latest-pages-articles-multistream.xml.bz2
 - ls
-- node --harmony index.js enwiktionary-latest-pages-articles-multistream.xml --limit $LIMIT --skip $SKIP
-- mongoexport --db wiktionaryToMongo --collection wiktionaryDump |bzip2 > "enWiktionaryDump_part_"+$PART+".json.bz2"
+- node --harmony index.js enwiktionary-latest-pages-articles-multistream.xml --limit "$LIMIT" --skip "$SKIP"
+- mongoexport --db wiktionaryToMongo --collection wiktionaryDump |bzip2 > "enWiktionaryDump_part_""$PART"".json.bz2"
 deploy:
   provider: releases
   api_key:
