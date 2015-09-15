@@ -156,7 +156,7 @@ var main = function(){
     console.log("starting");
     console.log("params: ", file, skip,limit, show, verbose, justCount);
     loadDb(function(err, db) {
-      loadWiktDumpToMongo(db, file, {skip:skip,limit:limi, show:show, verbose:verbose, justCount:justCount},function(err, res){
+      loadWiktDumpToMongo(db, file, {skip:skip,limit:limit, show:show, verbose:verbose, justCount:justCount},function(err, res){
         db.close();
       });
 
