@@ -135,8 +135,8 @@ var loadWiktDumpToMongo = function (db, file, opts, callback) {
 
 exports.loadWiktDumpToMongo = loadWiktDumpToMongo;
 
-var skip = argv.skip || 0;
-var limit = argv.limit;
+var skip = argv.skip || process.env["SKIP"] || 0;
+var limit = argv.limit || process.env["LIMIT"] || 0;
 var show = argv.show;
 var verbose = argv.verbose;
 var justCount = argv.just_count;
