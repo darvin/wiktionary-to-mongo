@@ -22,7 +22,7 @@
   "homepage": "https://github.com/darvin/wiktionary-to-mongo#readme",
   "dependencies": {
     "co": "^4.6.0",
-    "co-mongo": "https://github.com/darvin/co-mongo.git",
+    "co-mongo": "git://github.com/darvin/co-mongo.git",
     "jison": "^0.4.15",
     "mongodb": "*",
     "prettyjson": "^1.1.3",
