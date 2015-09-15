@@ -116,7 +116,7 @@ var loadWiktDumpToMongo = function *(file, skip,limit, show, verbose, justCount)
 exports.loadWiktDumpToMongo = loadWiktDumpToMongo;
 
 var skipSmall = argv.skip_small;
-var skip = argv.skip;
+var skip = argv.skip || 0;
 var limit = argv.limit;
 var show = argv.show;
 var verbose = argv.verbose;
@@ -134,8 +134,9 @@ function onerror(err) {
 }
 
 var main = function(){
-co(function *() {
-  console.log("starting");
+  co(function *() {
+    console.log("starting");
+    console.log("params: ", file, skip,limit, show, verbose, justCount);
     yield loadWiktDumpToMongo(file, skip,limit, show, verbose, justCount);
     console.log("done");
   }).catch(onerror);
