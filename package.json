@@ -1,0 +1,39 @@
+{
+  "name": "wiktionary-to-mongo",
+  "version": "1.0.0",
+  "description": "Fetches latest enwiktionary dump into friendly mongo bson export",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --harmony"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darvin/wiktionary-to-mongo.git"
+  },
+  "keywords": [
+    "wiktionary",
+    "mongo"
+  ],
+  "author": "Sergey Klimov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/darvin/wiktionary-to-mongo/issues"
+  },
+  "homepage": "https://github.com/darvin/wiktionary-to-mongo#readme",
+  "dependencies": {
+    "co": "^4.6.0",
+    "co-mongo": "git@github.com:darvin/co-mongo.git",
+    "jison": "^0.4.15",
+    "mongodb": "*",
+    "prettyjson": "^1.1.3",
+    "superagent": "^1.3.0",
+    "xml-stream": "*",
+    "yargs": "^3.24.0",
+    "wiktionary-parser": "*"
+  },
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "co-mocha": "^1.1.2",
+    "mocha": "^2.3.2"
+  }
+}

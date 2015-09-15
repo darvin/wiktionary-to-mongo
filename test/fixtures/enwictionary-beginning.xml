@@ -1,0 +1,1137 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.10/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.10/ http://www.mediawiki.org/xml/export-0.10.xsd" version="0.10" xml:lang="en">
+  <siteinfo>
+    <sitename>Wiktionary</sitename>
+    <dbname>enwiktionary</dbname>
+    <base>https://en.wiktionary.org/wiki/Wiktionary:Main_Page</base>
+    <generator>MediaWiki 1.26wmf20</generator>
+    <case>case-sensitive</case>
+    <namespaces>
+      <namespace key="-2" case="case-sensitive">Media</namespace>
+      <namespace key="-1" case="first-letter">Special</namespace>
+      <namespace key="0" case="case-sensitive" />
+      <namespace key="1" case="case-sensitive">Talk</namespace>
+      <namespace key="2" case="first-letter">User</namespace>
+      <namespace key="3" case="first-letter">User talk</namespace>
+      <namespace key="4" case="case-sensitive">Wiktionary</namespace>
+      <namespace key="5" case="case-sensitive">Wiktionary talk</namespace>
+      <namespace key="6" case="case-sensitive">File</namespace>
+      <namespace key="7" case="case-sensitive">File talk</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki talk</namespace>
+      <namespace key="10" case="case-sensitive">Template</namespace>
+      <namespace key="11" case="case-sensitive">Template talk</namespace>
+      <namespace key="12" case="case-sensitive">Help</namespace>
+      <namespace key="13" case="case-sensitive">Help talk</namespace>
+      <namespace key="14" case="case-sensitive">Category</namespace>
+      <namespace key="15" case="case-sensitive">Category talk</namespace>
+      <namespace key="90" case="case-sensitive">Thread</namespace>
+      <namespace key="91" case="case-sensitive">Thread talk</namespace>
+      <namespace key="92" case="case-sensitive">Summary</namespace>
+      <namespace key="93" case="case-sensitive">Summary talk</namespace>
+      <namespace key="100" case="case-sensitive">Appendix</namespace>
+      <namespace key="101" case="case-sensitive">Appendix talk</namespace>
+      <namespace key="102" case="case-sensitive">Concordance</namespace>
+      <namespace key="103" case="case-sensitive">Concordance talk</namespace>
+      <namespace key="104" case="case-sensitive">Index</namespace>
+      <namespace key="105" case="case-sensitive">Index talk</namespace>
+      <namespace key="106" case="case-sensitive">Rhymes</namespace>
+      <namespace key="107" case="case-sensitive">Rhymes talk</namespace>
+      <namespace key="108" case="case-sensitive">Transwiki</namespace>
+      <namespace key="109" case="case-sensitive">Transwiki talk</namespace>
+      <namespace key="110" case="case-sensitive">Wikisaurus</namespace>
+      <namespace key="111" case="case-sensitive">Wikisaurus talk</namespace>
+      <namespace key="114" case="case-sensitive">Citations</namespace>
+      <namespace key="115" case="case-sensitive">Citations talk</namespace>
+      <namespace key="116" case="case-sensitive">Sign gloss</namespace>
+      <namespace key="117" case="case-sensitive">Sign gloss talk</namespace>
+      <namespace key="828" case="case-sensitive">Module</namespace>
+      <namespace key="829" case="case-sensitive">Module talk</namespace>
+      <namespace key="2300" case="case-sensitive">Gadget</namespace>
+      <namespace key="2301" case="case-sensitive">Gadget talk</namespace>
+      <namespace key="2302" case="case-sensitive">Gadget definition</namespace>
+      <namespace key="2303" case="case-sensitive">Gadget definition talk</namespace>
+      <namespace key="2600" case="first-letter">Topic</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>Wiktionary:Welcome, newcomers</title>
+    <ns>4</ns>
+    <id>6</id>
+    <restrictions>edit=autoconfirmed:move=sysop</restrictions>
+    <revision>
+      <id>33678382</id>
+      <parentid>33678346</parentid>
+      <timestamp>2015-07-28T19:44:36Z</timestamp>
+      <contributor>
+        <username>-sche</username>
+        <id>444485</id>
+      </contributor>
+      <minor />
+      <comment>Reverted edits by [[Special:Contributions/Glory of Space|Glory of Space]]. If you think this rollback is in error, please leave a message on my talk page.</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">Hello, and welcome! Wiktionary is a [[multilingual]] [[free]] [[dictionary]], being written [[collaborative]]ly on this website by people from around the world. [[entry|Entries]] may be [[Help:How to edit a page|edit]]ed by anyone!
+
+Designed as the lexical companion to [[:w:Main Page|Wikipedia]], the encyclopedia project, Wiktionary has grown beyond a standard dictionary and now includes a [[Wiktionary:Wikisaurus|thesaurus]], a rhyme guide, phrase books, language statistics and extensive appendices.  We aim to include not only the definition of a word, but also enough information to really understand it. Thus [[etymology|etymologies]], pronunciations, sample quotations, synonyms, antonyms and translations are included.
+
+Wiktionary is a [[wiki]], which means that you can edit it, and all the content is dual-licensed under both the [[Wiktionary:Text of Creative Commons Attribution-ShareAlike 3.0 Unported License|Creative Commons Attribution-ShareAlike 3.0 Unported License]] as well as the [[Wiktionary:GNU Free Documentation License|GNU Free Documentation License]]. Before you contribute, you may wish to read through some of our [[Wiktionary:Help|Help]] pages, and bear in mind that we do things quite differently from other wikis. In particular, we have strict [[Wiktionary:Entry layout explained|layout conventions]] and [[Wiktionary:Criteria for inclusion|inclusion criteria]]. Learn how to [[Help:Starting a new page|start a page]], how to [[Help:How to edit a page|edit entries]], experiment in the [[Wiktionary:Sandbox|sandbox]] and visit our [[Wiktionary:Community Portal|Community Portal]] to see how you can participate in the development of Wiktionary.
+
+We have created '''{{NUMBEROFARTICLES}}''' articles since starting in [[December]], 2002, and we’re growing rapidly.
+
+==Editing Wiktionary==
+People like yourself are very active in building this [[project]]. While you are reading this, it is likely someone is editing one of our entries. Many [[knowledgeable]] people are already at work, but everybody is [[welcome]]!
+
+Contributing does not require [{{fullurl:Special:Userlogin|type=signup}} logging in], but we would [[prefer]] that you do, as it [[facilitate]]s the [[administration]] of this site. (Note that logging in also prevents the [[IP]] address of your computer from being displayed in the [{{fullurl:Wiktionary:Welcome, newcomers|action=history}} page history].)
+
+You can [[dive in]] right now and add or alter a definition, add example sentences, or help us to properly format or categorize entries. You can even [[Help:Starting a new page|create a page]] for a term we’re missing. Please feel free to [[Wiktionary:Be bold in updating pages|be bold]] in editing pages!
+
+How could allowing everyone to edit produce a high‐quality product instead of total disorder?  Because most people want to help, and keeping it open to everyone creates the potential for making many good and ever-improving entries. Records are kept of all changes, so even unhelpful edits can easily be [[revert]]ed by other users. To use a now‐famous [[w:Linus' Law|catchphrase]], in essence: “Given enough eyeballs, all errors are shallow.”
+
+To start out, users might want to use the ‘[[Special:Recentchanges|Recent changes]]’ or ‘[[Special:Random|Random page]]’ link (found in the navigation box elsewhere on this page), to get an idea of the kinds of pages you can find here. (It might be surprising how many non-English words are entered here!)
+
+==Norms and etiquette==
+{{xsee|[[Help:Interacting with humans]]}}
+One important thing you should know is that we have borrowed from our sister project [[Wikipedia:|Wikipedia]] some [[Wikipedia:Norm (sociology)|cultural norms]] you should respect:
+# We try not to argue pointlessly. This isn’t a debate forum. After [[civilized]] and reasonable discussion, we try to reach broad [[consensus]] in order to present an accurate, neutral summary of all relevant facts for future readers.
+# We try to make the entries as unbiased as we can, meaning that definitions or descriptions — even of controversial topics — are not meant to be platforms for preaching of any kind.
+# Bear in mind this is a ''dictionary'', which means there are many [[Wiktionary:What Wiktionary is not|things it is not]].
+# At any point, if you are uncomfortable changing someone else’s work, and you want to add a thought (or question or comment) about an entry or other page, the place is its [[Wiktionary:Talk page|talk page]] (click on the &quot;discussion&quot; tab at the top or the &quot;Discuss this page&quot; link in the sidebar or elsewhere, depending on your preference skin). Note, though, that we try to keep discussion focused on improving this dictionary.
+
+However, there are also some differences between Wikipedia and Wiktionary. If you already have some experience with editing Wikipedia, then you may find our [[Wiktionary:Wiktionary for Wikipedians|guide to Wikipedia users]] useful as a quick introduction.
+
+==For more information==
+More introductory information and descriptions of community norms are on the following pages:
+*[[Help:Starting a new page|How to start a page]] 
+*[[Help:How to edit a page|How to edit a page]] 
+*[[Wiktionary:Staying cool when the editing gets hot|Staying cool when editing gets hot]]
+*[[Help:FAQ|Wiktionary FAQ]]
+*[[Wiktionary:Wiktionary for Wikipedians|Wiktionary for Wikipedians]]
+*[[Wiktionary:News for editors]]
+
+For more policy and style guidelines or guidance, see our [[Wiktionary:Community Portal|Community Portal]] or [[Help:Contents]].
+
+[[fa:ویکی‌واژه:تازه‌واردان، خوش آمدید]]
+[[it:Aiuto:Benvenuto]]
+[[ro:Wik%C5%A3ionar:Bun_venit]]
+[[cy:Wiciadur:Croeso, newydd-ddyfodiaid]]
+[[de:Wiktionary:Willkommen]]
+[[eo:Vikivortaro:Enkonduko]]
+[[es:Wikcionario:Bienvenido]]
+[[hr:Wječnik:Dobrodošli]]
+[[id:Wiktionary:Perihal]]
+[[km:Wiktionary:Welcome, newcomers]]
+[[lb:Wiktionary:Wëllkomm]]
+[[ms:Wiktionary:Selamat datang pengguna baru]]
+[[nl:Wiktionary:Welkom]]
+[[ja:Wiktionary:ウィクショナリーへようこそ]]
+[[no:Wiktionary:Velkommen]]
+[[pt:Wikcionário:Bem-vindo]]
+[[ro:Wikţionar:Despre]]
+[[vi:Wiktionary:Giới thiệu]]
+[[zh:Wiktionary:%E6%AC%A2%E8%BF%8E%EF%BC%8C%E6%96%B0%E6%9D%A5%E8%80%85]]</text>
+      <sha1>pdgvb0p8s6p28xkxyz0holcmfurq77p</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Wiktionary:GNU Free Documentation License</title>
+    <ns>4</ns>
+    <id>7</id>
+    <revision>
+      <id>28863815</id>
+      <parentid>18348012</parentid>
+      <timestamp>2014-08-24T22:39:11Z</timestamp>
+      <contributor>
+        <username>Ready Steady Yeti</username>
+        <id>1705268</id>
+      </contributor>
+      <comment>This link doesn't actually exist. If you don't believe me, check it yourself.</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">The '''GNU Free Documentation License''' (GFDL) is a [[w:copyleft|copyleft]] license for free documentation, designed by the [[w:Free Software Foundation|Free Software Foundation]] (FSF) for the [[w:GNU|GNU]] project.  The official text of version 1.1 of the license text can be found at: http://www.gnu.org/copyleft/fdl.html
+
+The license is designed for software documentation and other reference and instructional materials. It stipulates that any copy of the material, even if modified, carry the same license. Those copies may be sold but, if produced in quantity, have to be made available in a format which facilitates further editing. 
+
+== Secondary Sections ==
+
+The license explicitly separates the &quot;[[w:GNU_Free_Documentation_License/Document|Document]]&quot; from &quot;[[w:GNU_Free_Documentation_License/Secondary Sections|Secondary Sections]]&quot;, which may not be integrated with the Document, but exist as front-matter materials or appendices. Secondary sections can contain information regarding the author's or publisher's relationship to the subject matter, but not any subject matter itself. While the Document itself is wholly editable, and is essentially covered by a license equivalent to the [[w:GNU General Public License|GNU General Public License]], some of the secondary sections have various restrictions designed primarily to deal with proper attribution to previous authors.
+
+Specifically, the authors of prior versions have to be acknowledged and certain &quot;invariant sections&quot; specified by the original author and dealing with his or her relationship to the subject matter may not be changed.  If the material is modified, its title has to be changed (unless the prior authors give permission to retain the title). The license also has provisions for the handling of [[w:GNU_Free_Documentation_License/Cover_Texts|front-cover and back-cover texts]] of books, as well as for &quot;History&quot;, &quot;Acknowledgements&quot;, &quot;Dedications&quot; and &quot;Endorsements&quot; sections.
+
+== Using the GFDL ==
+
+For a document to be covered by the GFDL, one must include a specific copyright and license notice.
+
+== Wiktionary and GFDL ==
+
+All Wiktionary articles are licensed to the public under the GNU Free Documentation License. See [[Wiktionary:Copyrights]] for the details. The local copy of the license, as required by the terms of the GFDL, is at [[Wiktionary:Text of the GNU Free Documentation License]].
+
+See also:
+* [[w:GNU|GNU]]
+* [[w:GNU General Public License|GNU General Public License]]: a similar license for software
+* [[w:Copyleft|Copyleft]]
+
+[[ca:gNU Free Documentation License]]
+[[da:Wiktionary:GNU Free Documentation License]]
+[[eo:GFDL]]
+[[it:GNU Free Documentation License]]
+[[csb:Wikisłowôrz:GNU Free Documentation License]]
+[[pt:Wikcionário:GNU Free Documentation License]]</text>
+      <sha1>q44cmj89jcz53h8nxbplac1svxl2jkf</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Wiktionary:Text of the GNU Free Documentation License</title>
+    <ns>4</ns>
+    <id>8</id>
+    <restrictions>sysop</restrictions>
+    <revision>
+      <id>11480759</id>
+      <parentid>11480731</parentid>
+      <timestamp>2011-01-26T23:50:34Z</timestamp>
+      <contributor>
+        <username>Mglovesfun</username>
+        <id>27458</id>
+      </contributor>
+      <minor />
+      <comment>sigh</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">GNU Free Documentation License
+
+Version 1.1, March 2000
+
+&lt;pre&gt;
+Copyright (C) 2000  Free Software Foundation, Inc.
+59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+Everyone is permitted to copy and distribute verbatim copies
+of this license document, but changing it is not allowed.
+&lt;/pre&gt;
+
+== 0. PREAMBLE ==
+
+The purpose of this License is to make a manual, textbook, or other written document &quot;free&quot; in the sense of freedom: to assure everyone the effective freedom to copy and redistribute it, with or without modifying it, either commercially or noncommercially. Secondarily, this License preserves for the author and publisher a way to get credit for their work, while not being considered responsible for modifications made by others.
+
+This License is a kind of &quot;copyleft&quot;, which means that derivative works of the document must themselves be free in the same sense. It complements the GNU General Public License, which is a copyleft license designed for free software.
+
+We have designed this License in order to use it for manuals for free software, because free software needs free documentation: a free program should come with manuals providing the same freedoms that the software does. But this License is not limited to software manuals; it can be used for any textual work, regardless of subject matter or whether it is published as a printed book. We recommend this License principally for works whose purpose is instruction or reference.
+
+==  1. APPLICABILITY AND DEFINITIONS ==
+
+This License applies to any manual or other work that contains a notice placed by the copyright holder saying it can be distributed under the terms of this License. The &quot;Document&quot;, below, refers to any such manual or work. Any member of the public is a licensee, and is addressed as &quot;you&quot;.
+
+A &quot;Modified Version&quot; of the Document means any work containing the Document or a portion of it, either copied verbatim, or with modifications and/or translated into another language.
+
+A &quot;Secondary Section&quot; is a named appendix or a front-matter section of the Document that deals exclusively with the relationship of the publishers or authors of the Document to the Document's overall subject (or to related matters) and contains nothing that could fall directly within that overall subject. (For example, if the Document is in part a textbook of mathematics, a Secondary Section may not explain any mathematics.) The relationship could be a matter of historical connection with the subject or with related matters, or of legal, commercial, philosophical, ethical or political position regarding them.
+
+The &quot;Invariant Sections&quot; are certain Secondary Sections whose titles are designated, as being those of Invariant Sections, in the notice that says that the Document is released under this License.
+
+The &quot;Cover Texts&quot; are certain short passages of text that are listed, as Front-Cover Texts or Back-Cover Texts, in the notice that says that the Document is released under this License.
+
+A &quot;Transparent&quot; copy of the Document means a machine-readable copy, represented in a format whose specification is available to the general public, whose contents can be viewed and edited directly and straightforwardly with generic text editors or (for images composed of pixels) generic paint programs or (for drawings) some widely available drawing editor, and that is suitable for input to text formatters or for automatic translation to a variety of formats suitable for input to text formatters. A copy made in an otherwise Transparent file format whose markup has been designed to thwart or discourage subsequent modification by readers is not Transparent. A copy that is not &quot;Transparent&quot; is called &quot;Opaque&quot;.
+
+Examples of suitable formats for Transparent copies include plain ASCII without markup, Texinfo input format, LaTeX input format, SGML or XML using a publicly available DTD, and standard-conforming simple HTML designed for human modification. Opaque formats include PostScript, PDF, proprietary formats that can be read and edited only by proprietary word processors, SGML or XML for which the DTD and/or processing tools are not generally available, and the machine-generated HTML produced by some word processors for output purposes only.
+
+The &quot;Title Page&quot; means, for a printed book, the title page itself, plus such following pages as are needed to hold, legibly, the material this License requires to appear in the title page. For works in formats which do not have any title page as such, &quot;Title Page&quot; means the text near the most prominent appearance of the work's title, preceding the beginning of the body of the text.
+
+== 2. VERBATIM COPYING ==
+
+You may copy and distribute the Document in any medium, either commercially or noncommercially, provided that this License, the copyright notices, and the license notice saying this License applies to the Document are reproduced in all copies, and that you add no other conditions whatsoever to those of this License. You may not use technical measures to obstruct or control the reading or further copying of the copies you make or distribute. However, you may accept compensation in exchange for copies. If you distribute a large enough number of copies you must also follow the conditions in section 3.
+
+You may also lend copies, under the same conditions stated above, and you may publicly display copies.
+
+== 3. COPYING IN QUANTITY ==
+
+If you publish printed copies of the Document numbering more than 100, and the Document's license notice requires Cover Texts, you must enclose the copies in covers that carry, clearly and legibly, all these Cover Texts: Front-Cover Texts on the front cover, and Back-Cover Texts on the back cover. Both covers must also clearly and legibly identify you as the publisher of these copies. The front cover must present the full title with all words of the title equally prominent and visible. You may add other material on the covers in addition. Copying with changes limited to the covers, as long as they preserve the title of the Document and satisfy these conditions, can be treated as verbatim copying in other respects.
+
+If the required texts for either cover are too voluminous to fit legibly, you should put the first ones listed (as many as fit reasonably) on the actual cover, and continue the rest onto adjacent pages.
+
+If you publish or distribute Opaque copies of the Document numbering more than 100, you must either include a machine-readable Transparent copy along with each Opaque copy, or state in or with each Opaque copy a publicly-accessible computer-network location containing a complete Transparent copy of the Document, free of added material, which the general network-using public has access to download anonymously at no charge using public-standard network protocols. If you use the latter option, you must take reasonably prudent steps, when you begin distribution of Opaque copies in quantity, to ensure that this Transparent copy will remain thus accessible at the stated location until at least one year after the last time you distribute an Opaque copy (directly or through your agents or retailers) of that edition to the public.
+
+It is requested, but not required, that you contact the authors of the Document well before redistributing any large number of copies, to give them a chance to provide you with an updated version of the Document.
+
+== 4. MODIFICATIONS ==
+
+You may copy and distribute a Modified Version of the Document under the conditions of sections 2 and 3 above, provided that you release the Modified Version under precisely this License, with the Modified Version filling the role of the Document, thus licensing distribution and modification of the Modified Version to whoever possesses a copy of it. In addition, you must do these things in the Modified Version:
+
+* A. Use in the Title Page (and on the covers, if any) a title distinct from that of the Document, and from those of previous versions (which should, if there were any, be listed in the History section of the Document). You may use the same title as a previous version if the original publisher of that version gives permission.
+* B. List on the Title Page, as authors, one or more persons or entities responsible for authorship of the modifications in the Modified Version, together with at least five of the principal authors of the Document (all of its principal authors, if it has less than five).
+* C. State on the Title page the name of the publisher of the Modified Version, as the publisher.
+* D. Preserve all the copyright notices of the Document.
+* E. Add an appropriate copyright notice for your modifications adjacent to the other copyright notices.
+* F. Include, immediately after the copyright notices, a license notice giving the public permission to use the Modified Version under the terms of this License, in the form shown in the Addendum below.
+* G. Preserve in that license notice the full lists of Invariant Sections and required Cover Texts given in the Document's license notice.
+* H. Include an unaltered copy of this License.
+* I. Preserve the section entitled &quot;History&quot;, and its title, and add to it an item stating at least the title, year, new authors, and publisher of the Modified Version as given on the Title Page. If there is no section entitled &quot;History&quot; in the Document, create one stating the title, year, authors, and publisher of the Document as given on its Title Page, then add an item describing the Modified Version as stated in the previous sentence.
+* J. Preserve the network location, if any, given in the Document for public access to a Transparent copy of the Document, and likewise the network locations given in the Document for previous versions it was based on. These may be placed in the &quot;History&quot; section. You may omit a network location for a work that was published at least four years before the Document itself, or if the original publisher of the version it refers to gives permission.
+* K. In any section entitled &quot;Acknowledgements&quot; or &quot;Dedications&quot;, preserve the section's title, and preserve in the section all the substance and tone of each of the contributor acknowledgements and/or dedications given therein.
+* L. Preserve all the Invariant Sections of the Document, unaltered in their text and in their titles. Section numbers or the equivalent are not considered part of the section titles.
+* M. Delete any section entitled &quot;Endorsements&quot;. Such a section may not be included in the Modified Version.
+* N. Do not retitle any existing section as &quot;Endorsements&quot; or to conflict in title with any Invariant Section.
+
+If the Modified Version includes new front-matter sections or appendices that qualify as Secondary Sections and contain no material copied from the Document, you may at your option designate some or all of these sections as invariant. To do this, add their titles to the list of Invariant Sections in the Modified Version's license notice. These titles must be distinct from any other section titles.
+
+You may add a section entitled &quot;Endorsements&quot;, provided it contains nothing but endorsements of your Modified Version by various parties--for example, statements of peer review or that the text has been approved by an organization as the authoritative definition of a standard.
+
+You may add a passage of up to five words as a Front-Cover Text, and a passage of up to 25 words as a Back-Cover Text, to the end of the list of Cover Texts in the Modified Version. Only one passage of Front-Cover Text and one of Back-Cover Text may be added by (or through arrangements made by) any one entity. If the Document already includes a cover text for the same cover, previously added by you or by arrangement made by the same entity you are acting on behalf of, you may not add another; but you may replace the old one, on explicit permission from the previous publisher that added the old one.
+
+The author(s) and publisher(s) of the Document do not by this License give permission to use their names for publicity for or to assert or imply endorsement of any Modified Version.
+
+== 5. COMBINING DOCUMENTS ==
+
+You may combine the Document with other documents released under this License, under the terms defined in section 4 above for modified versions, provided that you include in the combination all of the Invariant Sections of all of the original documents, unmodified, and list them all as Invariant Sections of your combined work in its license notice.
+
+The combined work need only contain one copy of this License, and multiple identical Invariant Sections may be replaced with a single copy. If there are multiple Invariant Sections with the same name but different contents, make the title of each such section unique by adding at the end of it, in parentheses, the name of the original author or publisher of that section if known, or else a unique number. Make the same adjustment to the section titles in the list of Invariant Sections in the license notice of the combined work.
+
+In the combination, you must combine any sections entitled &quot;History&quot; in the various original documents, forming one section entitled &quot;History&quot;; likewise combine any sections entitled &quot;Acknowledgements&quot;, and any sections entitled &quot;Dedications&quot;. You must delete all sections entitled &quot;Endorsements.&quot;
+
+== 6. COLLECTIONS OF DOCUMENTS ==
+
+You may make a collection consisting of the Document and other documents released under this License, and replace the individual copies of this License in the various documents with a single copy that is included in the collection, provided that you follow the rules of this License for verbatim copying of each of the documents in all other respects.
+
+You may extract a single document from such a collection, and distribute it individually under this License, provided you insert a copy of this License into the extracted document, and follow this License in all other respects regarding verbatim copying of that document.
+
+== 7. AGGREGATION WITH INDEPENDENT WORKS ==
+
+A compilation of the Document or its derivatives with other separate and independent documents or works, in or on a volume of a storage or distribution medium, does not as a whole count as a Modified Version of the Document, provided no compilation copyright is claimed for the compilation. Such a compilation is called an &quot;aggregate&quot;, and this License does not apply to the other self-contained works thus compiled with the Document, on account of their being thus compiled, if they are not themselves derivative works of the Document.
+
+If the Cover Text requirement of section 3 is applicable to these copies of the Document, then if the Document is less than one quarter of the entire aggregate, the Document's Cover Texts may be placed on covers that surround only the Document within the aggregate. Otherwise they must appear on covers around the whole aggregate.
+
+== 8. TRANSLATION ==
+
+Translation is considered a kind of modification, so you may distribute translations of the Document under the terms of section 4. Replacing Invariant Sections with translations requires special permission from their copyright holders, but you may include translations of some or all Invariant Sections in addition to the original versions of these Invariant Sections. You may include a translation of this License provided that you also include the original English version of this License. In case of a disagreement between the translation and the original English version of this License, the original English version will prevail.
+
+== 9. TERMINATION ==
+
+You may not copy, modify, sublicense, or distribute the Document except as expressly provided for under this License. Any other attempt to copy, modify, sublicense or distribute the Document is void, and will automatically terminate your rights under this License. However, parties who have received copies, or rights, from you under this License will not have their licenses terminated so long as such parties remain in full compliance.
+
+== 10. FUTURE REVISIONS OF THIS LICENSE ==
+
+The Free Software Foundation may publish new, revised versions of the GNU Free Documentation License from time to time. Such new versions will be similar in spirit to the present version, but may differ in detail to address new problems or concerns. See http://www.gnu.org/copyleft/.
+
+Each version of the License is given a distinguishing version number. If the Document specifies that a particular numbered version of this License &quot;or any later version&quot; applies to it, you have the option of following the terms and conditions either of that specified version or of any later version that has been published (not as a draft) by the Free Software Foundation. If the Document does not specify a version number of this License, you may choose any version ever published (not as a draft) by the Free Software Foundation.
+
+[[Category:Wiktionary|Text of the GNU Free Documentation License]]</text>
+      <sha1>771dfimergb1jk8r72plskc48b7x1rx</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Wiktionary:What Wiktionary is not</title>
+    <ns>4</ns>
+    <id>12</id>
+    <revision>
+      <id>27565787</id>
+      <parentid>27565785</parentid>
+      <timestamp>2014-07-11T03:24:08Z</timestamp>
+      <contributor>
+        <username>-sche</username>
+        <id>444485</id>
+      </contributor>
+      <comment>/* Wiktionary is not Wikipedia */ templates, not the abstract concept of learning, can be found in this category</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{shortcut|WT:WWIN|WT:WIN|WT:NOT}}
+Wiktionary is an online [[dictionary]] and, as a means to that end, also an [[w:online community|online community]]. Therefore, there are certain things that Wiktionary is ''not''.
+
+== What Wiktionary is not ==
+
+# Wiktionary is '''not an [[encyclopedia]], a genealogy database, or an atlas'''; that is, it is not an in-depth collection of factual information, or of data about places and people. Encyclopedic information should be placed in our sister project, [[w:Main page|Wikipedia]]. Wiktionary entries are about words. A Wiktionary entry should focus on matters of language and wordsmithing: spelling, pronunciation, etymology, translation, concept, usage, quotations{{,}} and links to related words. 
+# Wiktionary is '''not an [[arbiter]] of what is good English'''; correct English, acceptable English, suitable English, or even grammatical. Wiktionary [[describes]] usage, it does not [[prescribe]] nor [[proscribe]] it, and adheres only to its [[WT:CFI|criteria for inclusion]], which state that any term or meaning that can be shown to be in sufficiently widespread use may be included. By including or not including a certain term, it by no means accepts or attempts to promote a certain point of view, but is simply documenting, explaining what '''is in use''' in English or any other language.
+#&lt;span id=&quot;CRYSTAL&quot;/&gt; &lt;/span&gt;Wiktionary is '''not a [[crystal ball]]'''. Wiktionary does not try to predict which new words will actually achieve use. It usually depends on verifiable proof of usage over a year.
+#&lt;span id=&quot;NOTPAPER&quot;/&gt; &lt;/span&gt;Wiktionary is '''[[m:Wiki is not paper|not paper]]'''. Thus, Wiktionary effectively has no size limits, can include links, can be more timely, etc. It also means that the style and length of writing appropriate for paper may not be appropriate here. There is less need to use abbreviations. There is less need to exclude arguable entries. If enough people support a well formed entry, then there should be no need to call for its deletion.
+# Wiktionary is '''not a soapbox, chatroom{{,}} or discussion forum'''. However, there are [[Wiktionary:Discussion rooms|discussion rooms]] to discuss Wiktionary-related topics. 
+# Wiktionary is '''neither a [[w:Mirror (computing)|mirror]] nor a repository of links, images{{,}} or media files'''. Any content added to Wiktionary may be subject to merciless editing or deletion. 
+# Wiktionary is '''not a free wiki host or webspace provider'''. You may not host your own website at Wiktionary. If you are interested in using the [[wiki]] technology for a collaborative effort on anything other than writing a dictionary of all words in all languages, even if it is just a single page, there are many sites that provide wiki hosting. You can even install [http://www.mediawiki.org Wiktionary's wiki software] on your server.
+# Wiktionary is '''not a battlefield'''. Every user is expected to interact with others [[Wiktionary:Civility|civilly]], calmly and in a spirit of cooperation. Do not [[Wiktionary:No personal attacks|insult]], harass or intimidate those with whom you have a disagreement. Rather, approach the matter in an intelligent manner, and engage in polite discussion. Do not create or edit entries just to prove a point. Do not make legal or other threats against Wiktionary, Wiktionarians{{,}} or the Wikimedia Foundation. Threats are not tolerated and may result in a [[WT:BLOCK|ban]].
+# Wiktionary is '''not [[w:Censorship|censored]]''' (nor is it [[w:MPAA film rating system|content-rated]]). Anyone can edit an entry and the results are displayed instantaneously; thus, we cannot guarantee that someone will not see or read something objectionable.  In addition, Wiktionary has no organized system for the removal of material that might be thought likely to harm minors. However, entries can be censored by consensus.
+# Wiktionary is '''not just for English'''. Wiktionary is a dictionary  written in one language and covering all words in all languages, just as Wikipedia is an encyclopedia written in one language of all topics from all language-areas. Each Wiktionary seeks to define all words from all languages in its own language, so that readers will be able to find definitions of all words in all languages in their own language. This Wiktionary is written in English, so it is in a way an English dictionary, an English-to-anything and an anything-to-English dictionary all in one. Although one could look up {{term|être|lang=fr}} at fr.wiktionary ([[:fr:être]]), its definition will be in French. So if that person doesn’t speak any French, they still wouldn’t know what ''être'' meant, and it wouldn’t be of any help to them.
+
+== Wiktionary is not Wikipedia ==
+{{shortcut|WT:WINW}}
+{{main|Wiktionary:Wiktionary for Wikipedians}}
+
+Although Wiktionary and Wikipedia are sister projects, '''Wiktionary is not Wikipedia'''. Some of our policies are similar to some of Wikipedia's policies; others are quite different. The way we do things here is similar in some respects to the way things are done at Wikipedia; in other respects, it's very different.
+
+; Differences in content
+:* Unlike Wikipedia, Wiktionary does not have a &quot;notability&quot; criterion; rather, we have an &quot;attestation&quot; criterion, and (for multi-word terms) an &quot;idiomaticity&quot; requirement. There are some similarities here — [[w:Wikipedia:Wikipedia is not for things made up one day|neither Wiktionary nor Wikipedia is for &quot;things made up one day&quot;]] — but also some differences. Our &quot;attestation&quot; requirement is much less subjective than Wikipedia's &quot;notability&quot; requirement; and we include all terms in all languages, including very obscure or rare terms, provided they meet [[Wiktionary:Criteria for inclusion|our criteria for inclusion (CFI)]].
+:* Wiktionary is a ''secondary source'' for its subject matter (words and phrases) whereas Wikipedia is a ''tertiary source'' for its subject matter (topics). This means that while Wikipedia documents what other people say about topics, Wiktionary documents words and phrases itself without relying on the statements of other people. As a consequence, the requirements of verifiability are very different. Verification on Wikipedia asks &quot;can we find a credible source that says it is the case?&quot; while on Wiktionary we ask &quot;can we find real-life examples to show it is the case?&quot;. This also means that whereas Wikipedia discourages original research and relies on the research of others, Wiktionary users themselves actively research terms and their meanings.
+
+; Differences in community
+:* Wiktionary has a different [[WT:BLOCK|blocking policy]] than Wikipedia, and administrators don't usually issue warnings unless edits can be assumed to have been made in good faith.
+:* Because there are so many pages on Wiktionary with relatively little content, talk pages of individual pages are not often used. Instead, discussion is usually centralised in [[WT:BP|Beer Parlour]], [[WT:TR|Tea room]] and other discussion rooms.
+:* Unlike Wikipedia, which encourages users to be creative with user boxes on their personal pages, Wiktionary allows only userboxes that are relevant to your work on Wiktionary itself. This includes most importantly [[WT:Babel|language userboxes]], which display the languages that you know.
+
+; Differences in organization
+:* Unlike Wikipedia, Wiktionary's page names are case sensitive. [[Hand]] and [[hand]] are different pages. When several pages exist that differ only in their capitalisation, the template {{temp|also}} is placed at the very beginning of the page to redirect between them.
+:* There are no disambiguation pages on Wiktionary, and we do not create redirects for alternative forms, spellings or inflected forms of words. Instead, a small stub entry is created with a template that links back to the main form. Many such stub entries are created automatically using various [[WT:BOT|bots]].
+
+; Differences in page format and wikitext
+:* Wiktionary has a very rigid page format, detailed at [[WT:ELE|Entry Layout Explained]].
+:* Wiktionary makes heavy use of templates for all kinds of things, and each language often has its own set of templates. Learning to use the templates of the language you are working on is very important; templates can be found at [[:Category:Templates by language]]. Categories, formatting and linking also often use templates for consistent formatting.
+:* Wiktionary uses [[WT:LANGCODE|language codes]] extensively for any language-specific purposes involving templates. For example, many templates use &lt;tt&gt;en&lt;/tt&gt; to refer to the English language, or &lt;tt&gt;cmn&lt;/tt&gt; to refer to Mandarin Chinese. Knowing the code of the language you are working on is very important, and necessary for almost any kind of editing on Wiktionary.
+:* On Wiktionary, categories are often added to pages by the templates used on that page, so there is no need to put them directly on the page. In particular, [[Wiktionary:Headword-line templates|headword-line templates]] and context templates are most commonly used to add entries to the appropriate categories.
+
+==See also==
+* {{projectlink|pedia|Wikipedia:Wikipedia is not a dictionary}}
+
+[[cs:Wikislovník:Co Wikislovník není]]
+[[de:Hilfe:Was das Wikiwörterbuch nicht ist]]
+[[es:Wikcionario:Lo que Wikcionario no es]]
+&lt;!--[[en:Wiktionary:What Wiktionary is not]]--&gt;
+[[ja:Wiktionary:ウィクショナリーは何でないか]]
+[[no:Wiktionary:Hva Wiktionary ikke er]]
+[[nl:WikiWoordenboek:Wat_WikiWoordenboek_niet_is]]
+[[pt:Wikcionário:O que o wikcionário não é]]
+[[ru:Викисловарь:Чем не является Викисловарь]]
+[[tr:Vikisözlük:Vikisözlük ne değildir?]]
+[[vi:Wiktionary:Những gì không phải là Wiktionary]]
+[[fa:ویکی‌واژه:ویکی‌واژه چه چیزی نیست]]
+
+[[Category:Wiktionary|What Wiktionary is not]]
+[[Category:Wiktionary:Help|What Wiktionary is not]]</text>
+      <sha1>atei23rp0qryzw5ii87zumal9rgrvb0</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>dictionary</title>
+    <ns>0</ns>
+    <id>16</id>
+    <revision>
+      <id>34311167</id>
+      <parentid>34269926</parentid>
+      <timestamp>2015-09-01T17:33:45Z</timestamp>
+      <contributor>
+        <username>TweenkBot</username>
+        <id>2725405</id>
+      </contributor>
+      <minor />
+      <comment>Interactive: disambiguate Polish masculine noun animacy in a translation</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">==English==
+{{wikipedia|dab=Dictionary (disambiguation)|Dictionary}}
+[[Image:Latin dictionary.jpg|thumb|250px|A multi-volume Latin dictionary in the [[w:University Library of Graz|University Library of Graz]].]]
+
+===Etymology===
+{{etyl|ML.|en}} {{m|la|dictionarium}}, from {{etyl|la|en}} {{m|la|dictionarius}}, from {{m|la|dictio||speaking}}, from {{m|la|dictus}}, perfect past participle of {{m|la|dīcō||speak}} + {{m|la|-arium||room, place}}.
+
+===Pronunciation===
+* {{a|RP}} {{IPA|/ˈdɪkʃ(ə)n(ə)ɹɪ/|lang=en}}
+* {{a|GenAm|Canada}} {{enPR|dĭk'shə-nĕr-ē}}, {{IPA|/ˈdɪkʃənɛɹi/|lang=en}}
+* {{audio|en-us-dictionary.ogg|Audio (US)|lang=en}}
+* {{audio|en-uk-dictionary.ogg|Audio (UK)|lang=en}}
+* {{hyphenation|dic|tion|ary|lang=en}}
+
+===Noun===
+{{en-noun|dictionaries}}
+
+# A [[reference work]] with a list of [[word]]s from one or more languages, normally ordered [[alphabetical]]ly and explaining each word's meaning and sometimes containing information on its etymology, usage, translations{{,}} and other data.
+#* {{quote-book|year=1988|author=Andrew Radford|title=Transformational grammar: a first course|location=Cambridge, UK|publisher=Cambridge University Press|page=339|chapter=7}}
+#*: But what other kind(s) of syntactic information should be included in Lexical Entries? Traditional '''dictionaries''' such as Hornby's (1974) ''Oxford Advanced Learner's '''Dictionary''' of Current English'' include not only ''categorial'' information in their entries, but also information about the range of ''Complements'' which a given item permits (this information is represented by the use of a number/letter code).
+# By extension, any work that has a list of material organized alphabetically; e.g. biographical dictionary, encyclopedic dictionary.
+# {{label|en|computing}} An [[associative array]], a data structure where each value is referenced by a particular key, analogous to words and definitions in a physical dictionary.
+#* '''2011''', Jon Galloway, Phil Haack, Brad Wilson, ''Professional ASP.NET MVC 3''
+#*: User calls &lt;code&gt;RouteCollection.GetVirtualPath&lt;/code&gt;, passing in a &lt;code&gt;RequestContext&lt;/code&gt;, a '''dictionary''' of values, and an optional route name used to select the correct route to generate the URL.
+* {{seeCites}}
+
+====Synonyms====
+* {{sense|reference book listing words}} [[wordbook]]; for more, see [[Wikisaurus:dictionary]]
+
+====Derived terms====
+* [[encyclopedic dictionary]]
+* [[explanatory dictionary]]
+* [[fictionary]]
+* [[pedagogical dictionary]]
+* [[Pictionary]]
+* [[pronunciation dictionary]]
+* [[subdictionary]]
+* [[translating dictionary]]
+* [[rhyming dictionary]]
+* [[translationary]]
+* [[visual dictionary]]
+
+====See also====
+* [[lexicon]]
+* [[encyclopedia]]
+* [[vocabulary]]
+
+====Translations====
+{{trans-top|publication that explains the meanings of an ordered list of words}}
+* Abaza: {{t|abq|ажвар}}
+* Abkhaz: {{t|ab|ажәар|sc=Cyrl}}
+* Adyghe: {{t|ady|гущыӏалъ|sc=Cyrl}}
+* Afrikaans: {{t+|af|woordeboek}}
+* Akan: {{t-needed|ak}}
+* Albanian: {{t+|sq|fjalor|m}}
+* American Sign Language: {{t|ase|D@NearPalm-PalmDown-OpenB@CenterChesthigh-PalmUp CirclesMidlineContact}}
+* Amharic: {{t|am|መዝገበ ቃላት|sc=Ethi}}
+* Amuzgo: {{t|amu|tzoⁿ 'tzítyui' jñ'o}}
+* Arabic: {{t+|ar|قَامُوس|m}}, {{t+|ar|مُعْجَم|m}}
+* Aragonese: {{t|an|diccionario|m}}
+* Armenian: {{t+|hy|բառարան|sc=Armn}}
+*: Old Armenian: {{t|xcl|բառգիրք|sc=Armn}}
+* Assamese: {{t|as|অভিধান|tr=ôbhidhān|sc=Beng}}
+* Asturian: {{t|ast|diccionariu|m}}
+* Avar: {{t|av|словарь|sc=Cyrl}}, {{t|av|къамус|sc=Cyrl}} {{qualifier|dated}}
+* Aymara: {{t|ay|aru pirwa}}
+* Azeri: {{t+|az|lüğət}}
+* Bashkir: {{t|ba|һүҙлек|sc=Cyrl}}
+* Basque: {{t+|eu|hiztegi}}
+* Belarusian: {{t|be|сло́ўнік|m|sc=Cyrl}} (łacinka: {{t|be|słoŭnik|m|sc=Latn}})
+* Bengali: {{t+|bn|অভিধান|tr=ôbhidhan|sc=Beng}}, {{t|bn|ডিকশনারী|tr=ḍikshônari|sc=Beng}}, {{t|bn|ডিকশনারি|tr=ḍikshônari|sc=Beng}}
+* Breton: {{t+|br|geriadur|m}}
+* Bulgarian: {{t+|bg|ре́чник|m}}, {{t|bg|слова́р|m}}
+* Burmese: {{t+|my|အဘိဓာန်|sc=Mymr}}
+* Buryat: {{t|bua|толи}}
+* Catalan: {{t+|ca|diccionari|m}}
+* Chakma: {{t|ccp|𑄇𑄧𑄙𑄖𑄢|tr=kadhātārā|sc=Cakm}}
+* Chechen: {{t|ce|словарь}}, {{t|ce|дошам}}, {{t|ce|лугӏат}}
+* Cherokee: {{t|chr|ᏗᏕᏠᏆᏍᏙᏗ|sc=Cher}}
+* Chinese:
+*: Dungan: {{t|dng|хуадян|tr=huadyan|sc=Cyrl}}
+*: Mandarin: {{t+|cmn|字典|tr=zìdiǎn|sc=Hani}} {{qualifier|character dictionary}}, {{t+|cmn|詞典|sc=Hani}}, {{t+|cmn|词典|tr=cídiǎn|sc=Hani}}, {{t+|cmn|辭典|sc=Hani}}, {{t+|cmn|辞典|tr=cídiǎn|sc=Hani}} {{qualifier|alternative forms}}
+*: Wu: {{t|wuu|zïtip}} {{qualifier|Suzhou dialect}}
+* Chuvash: {{t|cv|словарь|sc=Cyrl}}, {{t|cv|сӑмахсен кӗнеки|sc=Cyrl}}
+* Cornish: {{t|kw|gerlyver|m}}
+* Crimean Tatar: {{t|crh|luğat}}
+* Czech: {{t+|cs|slovník|m}}
+* Danish: {{t+|da|ordbog|c}}
+* Dargwa: {{t|dar|словарь}}
+* Dhivehi: {{t|dv|ބަސްފޮތް|sc=Thaa}}
+* Dutch: {{t+|nl|woordenboek|n}}
+* Eastern Mari: {{t|chm|мутер}}, {{t|chm|словарь}}
+* Erzya: {{t|myv|валкс}}
+* Esperanto: {{t+|eo|vortaro}}
+* Estonian: {{t+|et|sõnaraamat}}, {{t|et|sõnastik}}
+* Evenki: {{t|evn|турэ̄рук}}
+* Faroese: {{t+|fo|orðabók|f}}
+* Finnish: {{t+|fi|sanakirja}}
+* French: {{t+|fr|dictionnaire|m}}, {{t+|fr|dico|m}} {{qualifier|informal}}
+*: Middle French: {{t|frm|dictionnaire|m}}
+* Fula: {{t|ff|saggitorde}}
+* Gagauz: {{t|gag|sözlük}}
+* Galician: {{t+|gl|dicionario|m}}
+* Georgian: {{t+|ka|ლექსიკონი|sc=Geor}}
+* German: {{t+|de|Wörterbuch|n}}, {{t|de|Diktionär|n|m}}
+* Greek: {{t+|el|λεξικό|n}}
+*: Ancient: {{t|grc|λέξεις|f-p|sc=polytonic}}, {{t|grc|λεξικόν|n|alt=λεξῐκόν|sc=polytonic}}, {{t|grc|γλῶσσαι|f-p|sc=polytonic}}
+* Gujarati: {{t|gu|શબ્દકોશ|tr=śabdkoś|sc=Gujr}}
+* Haitian Creole: {{t|ht|diksyonè}}
+* Hausa: {{t|ha|ƙamus|m}}
+* Hawaiian: {{t|haw|puke wehewehe ‘ōlelo}}
+* Hebrew: {{t+|he|מילון|m|tr=milón|alt=מילון \ מִלּוֹן}}
+* Hiligaynon: {{t|hil|diksonaryo}}, {{t|hil|kapulungan}}
+* Hindi: {{t+|hi|शब्दकोश|m}}, {{t|hi|कोश|m}}, {{t|hi|डिक्शनरी}}
+* Hopi: {{t|hop|lavaytutuveni}}
+* Hungarian: {{t+|hu|szótár}}
+* Icelandic: {{t+|is|orðabók|f}}
+* Ido: {{t+|io|vortaro}}
+* Igbo: {{t|ig|nkowaokwu}}
+* Indonesian: {{t+|id|kamus}}
+* Ingush: {{t|inh|словарь}}
+* Interlingua: {{t|ia|dictionario}}
+* Interlingue: {{t-needed|ie}}
+* Inuktitut: {{t|iu|ᕿᒥᕐᕈᐊᑦ ᐅᓐᓂᖅᑐᖅ ᒥᑦᓯ ᑐᑭᐊ|sc=Cans}}
+* Irish: {{t+|ga|foclóir|m}}
+* Italian: {{t+|it|dizionario|m}}
+* Japanese: {{t+|ja|辞書|tr=じしょ, jisho}}, {{t|ja|字書|tr=じしょ, jisho}}, {{t+|ja|辞典|tr=じてん, jiten}}, {{t+|ja|字典|tr=じてん, jiten}} {{qualifier|character dictionary}}, {{t|ja|字引|tr=じびき, jibiki}} {{qualifier|character dictionary}}
+* Javanese: {{t|jv|bausastra}}
+* Nogai: {{t|nog|соьзлик|tr=sözlik|sc=Cyrl}}
+* Norman: {{t|nrf|dictionnaithe|m}}
+* Kabardian: {{t|kbd|словарь}}, {{t|kbd|слъэвар}}, {{t|kbd|псалъалъэ}}
+* Kalmyk: {{t|xal|толь}}
+* Kannada: {{t+|kn|ನಿಘಂಟು|sc=Knda}}, {{t+|kn|ಅರ್ಥಕೋಶ|sc=Knda}}
+* Kapampangan: {{t|pam|talabaldugan}}
+* Karachay-Balkar: {{t|krc|сёзлюк}}
+* Karakalpak: {{t|kaa|soʻzlik}}
+* Karelian: {{t|krl|šanalo}}
+* Kashubian: {{t|csb|słowôrz|m}}
+* Kazakh: {{t+|kk|сөздік|sc=Cyrl}}
+* Khakas: {{t|kjh|сӧстік|tr=söstík}}
+* Khmer: {{t+|km|វចនានុក្រម|tr=wachanānūgrom|sc=Khmr}}
+* Kikuyu: {{t|ki|kamusi}}
+* Kinyarwanda: {{t-needed|rw}}
+* Kirundi: {{t-needed|rn}}
+* Komi-Permyak: {{t|koi|кывчукӧр}}
+* Korean: {{t+|ko|사전}} ({{t+|ko|辭典|sc=Hani}}), {{t+|ko|자서}} ({{t+|ko|字書|sc=Hani}}), {{t+|ko|자전|sc=Kore}} ({{t+|ko|字典|sc=Kore}}) {{qualifier|character dictionary}}
+* Kurdish:
+*: Kurmanji: {{t+|ku|ferheng|f}}, {{t+|ku|peyvname|f}}, {{t+|ku|bêjename|f}}, {{t+|ku|qamûs|f}}
+*: Sorani: {{t|ckb|فەرھەنگ|tr=ferheng}}, {{t|ckb|وشەنامە|tr=wişename}}, {{t|ckb|وشەدان|tr=wişedan}}, {{t|ckb|قامووس|tr=qamûs}}
+* Kyrgyz: {{t|ky|сөздүк|sc=Cyrl}}
+* Lak: {{t|lbe|словарь}}
+* Lao: {{t+|lo|ວັດຈະນານຸກົມ|sc=Laoo}} &lt;!-- {{t|lo|ປະທານຸກົມ|sc=Laoo}}) --&gt;
+* Latgalian: {{t|ltg|vuordineica|f}}
+* Latin: {{t|la|dictionarium|n}}
+* Latvian: {{t+|lv|vārdnīca|f}}
+{{trans-mid}}
+* Ligurian: {{t|lij|dizionario|m}}
+* Limburgish: {{t+|li|diksjenaer}}, {{t|li|waordebook}}
+* Lithuanian: {{t+|lt|žodynas|m}}
+* Low German: {{t|nds|Wöörbook|n}}, {{t|nds|Weerderbook|n}}
+* Luhya: {{t|luy|ekamusi}}
+* Luxembourgish: {{t+|lb|Dictionnaire|m}}, {{t+|lb|Wierderbuch|n}}
+* Macedonian: {{t|mk|ре́чник|m}}
+* Malagasy: {{t+|mg|rakibolana}}
+* Malay: {{t+|ms|kamus}}
+* Malayalam: {{t+|ml|നിഘണ്ടു|sc=Mlym}}
+* Maltese: {{t+|mt|dizzjunarju|m}}
+* Manchu: (buleku bithe)
+* Manx: {{t|gv|fockleyr|m}}
+* Maori: {{t|mi|pukapuka taki kupu}}
+* Marathi: {{t|mr|शब्दकोष|m|sc=Deva}}, {{t|mr|विश्वकोष|m|sc=Deva}}
+* Mauritian Creole: {{t|mfe|diksioner}}
+* Meru: {{t|mer|kamusi}}
+* Middle Persian: {{t|pal|𐭯𐭥𐭧𐭭𐭢|tr=frahang}}
+* Moksha: {{t|mdf|валкс}}
+* Mongolian: {{t|mn|толь бичиг|sc=Cyrl}}
+* Nahuatl: {{t+|nah|tlahtōltecpantiliztli}}
+* Navajo: {{t|nv|naaltsoos saad bee siʼánígíí}}
+* Neapolitan: {{t|nap|dezziunario}}
+* Nenets: {{t|yrk|словарь}}
+* Nepali: {{t+|ne|शब्दकोश|tr=śabdkoś|sc=Deva}}
+* Norman: {{t|nrf|dictionnaithe}}
+* Northern Sami: {{t|se|sátnegirji}}
+* Norwegian:
+*: Bokmål: {{t+|no|ordbok|m|f}}
+*: Nynorsk: {{t|nn|ordbok|f}}
+* Novial: {{t|nov|lexike}}
+* Occitan: {{t+|oc|diccionari|m}}
+* Ojibwe: {{t|oj|ikidowini-mazina'igan}}
+* Ossetian:
+*: Digor: {{t|os|дзурдуат|sc=Cyrl}}
+*: Iron: {{t|os|дзырдуат|sc=Cyrl}}
+* Papiamentu: {{t|pap|dictionario}}
+* Pashto: {{t+|ps|قاموس|tr=qâmos|sc=ps-Arab}}
+* Persian: {{t|fa|لغت‌نامه|tr=loğat-nâme}}, {{t+|fa|فرهنگ|tr=farhang}}, {{t+|fa|واژه‌نامه|tr=vâže-nâme|sc=fa-Arab}}
+* Plautdietsch: {{t|pdt|Weadbüak}}
+* Polish: {{t+|pl|słownik|m-in}}
+* Portuguese: {{t+|pt|dicionário|m}}
+* Punjabi: {{t|pa|ਸ਼ਬਦਕੋਸ਼|tr=śabdkoś|sc=Guru}}, {{t|pa|ਡਿਕਸ਼ਨਰੀ|tr=ḍikśanrī|sc=Guru}}
+* Quechua: {{t|qu|simi qullqa}}
+* Romanian: {{t+|ro|dicționar|n}}
+* Romansch: {{t|rm|pledari|m}}, {{t|rm|dicziunari|m}}, {{t|rm|vocabulari|m}}, {{t|rm|glossari|m}}
+* Russian: {{t+|ru|слова́рь|m}}
+* Rusyn: {{t|rue|сло́вник|m}}
+* Sanskrit: {{t|sa|शब्दकोश|m}}, {{t|sa|निघण्टु|m}}, {{t|sa|अभिधान|n}}
+* Sardinian: {{t|sc|dizionariu|m}}
+* Scots: {{t|sco|dictionar}}
+* Scottish Gaelic: {{t|gd|faclair|m}}
+* Serbo-Croatian:
+*: Cyrillic: {{t|sh|речник|m|sc=Cyrl}}, {{t|sh|рјечник|m|sc=Cyrl}}
+*: Roman: {{t|sh|rečnik|m}}, {{t+|sh|rječnik|m}}
+* Shona: {{t|sn|duramahwi}}, {{t|sn|duramazwi}}
+* Shor: {{t|cjs|сӧстӱк|tr=söstük}}
+* Sicilian: {{t+|scn|dizziunariu|m}}, {{t|scn|vocabbulariu|m}}
+* Silesian: {{t|szl|dykcjůnoř|m}}
+* Sindhi: {{t-check|sd|لغت|alt=لُغَتُ|sc=sd-Arab}} &lt;!-- links didn't work for Sindhi--&gt;, {{t|sd|कोश|tr=koś|sc=Deva}}
+* Sinhalese: {{t|si|ශබ්ද කෝෂය|sc=Sinh}}, {{t|si|ශබ්දකෝෂය|sc=Sinh}}
+* Skolt Sami: {{t|sms|sää´nnǩerjj}}
+* Slovak: {{t+|sk|slovník|m}}
+* Slovene: {{t+|sl|slovar|m}}
+* Somali: {{t+|so|qaamuus}}, {{t|so|abwan-ka}}
+* Sorbian:
+*: Lower Sorbian: {{t|dsb|słownik|m}}
+*: Upper Sorbian: {{t|hsb|słownik|m}}
+* Sotho: {{t+|st|bukantswe}}
+* Southern Altai: {{t|alt|сӧзлик|tr=sözlik}}
+* Spanish: {{t+|es|diccionario|m}}
+* Swahili: {{t+|sw|kamusi|c5}}
+* Swedish: {{t+|sv|ordbok|c}}, {{t+|sv|lexikon|n}}
+* Tabasaran: {{t|tab|словарь}}
+* Tagalog: {{t+|tl|diksyunaryo}}, {{t+|tl|talahuluganan}}, {{t+|tl|talasalitaan}}, {{t+|tl|talatinigan}}
+* Tajik: {{t+|tg|луғат|sc=Cyrl}}, {{t+|tg|фарҳанг|sc=Cyrl}}, {{t|tg|қомус|sc=Cyrl}}
+* Tamil: {{t+|ta|அகரமுதலி}}
+* Tatar: {{t+|tt|сүзлек|sc=Cyrl}}
+* Telugu: {{t+|te|నిఘంటువు}}, {{t+|te|పదకోశము}}
+* Thai: {{t+|th|พจนานุกรม|tr=pótjànaanúgrom}}
+* Tibetan: {{t|bo|ཚིག་མཛོད}}
+* Tigrinya: {{t|ti|መዝገበ ቃላት|sc=Ethi}}
+* Tok Pisin: {{t+|tpi|dikseneri}}
+* Turkish: {{t+|tr|sözlük}}, {{t+|tr|lügat}} {{qualifier|obsolete}}
+* Turkmen: {{t|tk|sözlük}}
+* Tuvan: {{t|tyv|словарь}}, {{t|tyv|сөстүк}}
+* Udmurt: {{t|udm|словарь}}, {{t|udm|кыллюкам}}, {{t|udm|кылсузьет}}
+* Ukrainian: {{t+|uk|сло́вник|m}}
+* Urdu: {{t+|ur|لغت|f|tr=luġat}}, {{t|ur|ڈکشنری|tr=ḍikśanrī}}, {{t|ur|فرہنگ|tr=farhang}}, {{t|ur|شبدکوش|m|tr=śabdkoś|sc=ur-Arab}}
+* Uyghur: {{t+|ug|لۇغەت|sc=ug-Arab}}
+* Uzbek: {{t+|uz|lugʻat}}
+*: Cyrillic: {{t+|uz|луғат|sc=Cyrl}}
+* Venda: {{t|ve|ṱhalusamaipfi}}
+* Veps: {{t|vep|vajehnik}}
+* Vietnamese: {{t+|vi|từ điển}}, {{t+|vi|tự điển}} ({{t+|vi|字典|sc=Hani}}) {{qualifier|dated, character dictionary}}
+* Volapük: {{t+|vo|vödabuk}}, {{t|vo|vödasbuk}} {{qualifier|older term, compare {{l|de|Wörterbuch}}}}
+* Võro: {{t|vro|sõnaraamat}}
+* Wallisian: {{t|wls|tikisionalio}}
+* Walloon: {{t+|wa|motî}}
+* Welsh: {{t+|cy|geiriadur|m}}
+* West Frisian: {{t+|fy|wurdboek|n}}
+* Wolof: {{t|wo|diksoneer}}
+* Xhosa: {{t|xh|idikshinari|c5}}
+* Yakut: {{t|sah|тылдьыт|sc=Cyrl}}
+* Yiddish: {{t+|yi|ווערטערבוך|n}}
+* Yoruba: {{t|yo|àtúmọ̀-èdè}}
+* Zazaki: {{t|zza|vatebend|m}}
+* Zulu: {{t|zu|isichazimazwi|c4}}, {{t|zu|idikishaneli}}
+{{trans-bottom}}
+
+{{trans-top|an associative array}}
+* French: {{t|fr|tableau associatif|m}}, {{t+|fr|dictionnaire|m}}, {{t|fr|table d'association|f}}
+* German: {{t|de|assoziatives Datenfeld|n}}
+* Japanese: {{t+|ja|辞書|tr=じしょ, jisho}}
+* Latin: {{t|la|glossarium|n}}, {{t|la|index verborum}}
+{{trans-mid}}
+* Polish: {{t+|pl|słownik|m-in}}
+* Portuguese: {{t+|pt|dicionário|m}}, {{t|pt|array associativo|m}}
+* Russian: {{t+|ru|слова́рь|m}}
+* Swahili: {{t+|sw|kamusi}}
+{{trans-bottom}}
+
+===Anagrams===
+* [[indicatory#English|indicatory]]
+
+===Verb===
+{{en-verb|dictionar|ies}}
+
+# {{label|en|transitive}} To look up in a dictionary.
+# {{label|en|transitive}} To add to a dictionary.
+#* '''1866''', William Henry Ward, ''The international day, night, and fog signal telegraph'' (page 12)
+#*: By a reference to the following '''dictionaried''' abbreviations, the simplicity and harmony of each sentence will be manifestly apparent; although it does not embrace everything, and could not, as it would be far too voluminous for general use.
+#* '''2001''', ''The Michigan Alumnus'' (page 25)
+#*: Should I use a word that a lot of people use but isn't in the dictionary? Uncle Phil would rather get a root canal than say he was scrapbooking, because the word isn't '''dictionaried'''.
+# {{label|en|intransitive|rare}} To [[compile]] a dictionary.
+#* '''1864''', ''Blackwood's Edinburgh Magazine'' (volume 96, page 334)
+#*: They [dictionary-makers] may have had their romance at home — may have been crossed in love, and thence driven to '''dictionarying'''; may have been involved in domestic tragedies — who can say?
+# {{label|en|intransitive}} To appear in a dictionary.
+
+[[Category:en:Dictionaries]]
+
+[[ar:dictionary]]
+[[az:dictionary]]
+[[zh-min-nan:dictionary]]
+[[bg:dictionary]]
+[[bs:dictionary]]
+[[br:dictionary]]
+[[ca:dictionary]]
+[[cs:dictionary]]
+[[cy:dictionary]]
+[[da:dictionary]]
+[[de:dictionary]]
+[[dv:dictionary]]
+[[et:dictionary]]
+[[el:dictionary]]
+[[es:dictionary]]
+[[eo:dictionary]]
+[[eu:dictionary]]
+[[fa:dictionary]]
+[[fr:dictionary]]
+[[fy:dictionary]]
+[[gl:dictionary]]
+[[ko:dictionary]]
+[[hy:dictionary]]
+[[hi:dictionary]]
+[[io:dictionary]]
+[[id:dictionary]]
+[[zu:dictionary]]
+[[is:dictionary]]
+[[it:dictionary]]
+[[kn:dictionary]]
+[[ka:dictionary]]
+[[kk:dictionary]]
+[[sw:dictionary]]
+[[ku:dictionary]]
+[[ky:dictionary]]
+[[lo:dictionary]]
+[[lv:dictionary]]
+[[lb:dictionary]]
+[[lt:dictionary]]
+[[li:dictionary]]
+[[hu:dictionary]]
+[[mk:dictionary]]
+[[mg:dictionary]]
+[[ml:dictionary]]
+[[mt:dictionary]]
+[[ms:dictionary]]
+[[mn:dictionary]]
+[[my:dictionary]]
+[[nl:dictionary]]
+[[ja:dictionary]]
+[[no:dictionary]]
+[[oc:dictionary]]
+[[uz:dictionary]]
+[[km:dictionary]]
+[[tpi:dictionary]]
+[[pl:dictionary]]
+[[pt:dictionary]]
+[[ro:dictionary]]
+[[ru:dictionary]]
+[[sq:dictionary]]
+[[simple:dictionary]]
+[[sk:dictionary]]
+[[sl:dictionary]]
+[[so:dictionary]]
+[[sr:dictionary]]
+[[su:dictionary]]
+[[fi:dictionary]]
+[[sv:dictionary]]
+[[tl:dictionary]]
+[[ta:dictionary]]
+[[te:dictionary]]
+[[th:dictionary]]
+[[tg:dictionary]]
+[[tr:dictionary]]
+[[uk:dictionary]]
+[[ur:dictionary]]
+[[ug:dictionary]]
+[[vi:dictionary]]
+[[zh:dictionary]]</text>
+      <sha1>8k1zeh6rm0wycj9bglbtip3co6qt97z</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>august</title>
+    <ns>0</ns>
+    <id>117</id>
+    <revision>
+      <id>34302344</id>
+      <parentid>33707732</parentid>
+      <timestamp>2015-09-01T07:55:10Z</timestamp>
+      <contributor>
+        <username>Rukhabot</username>
+        <id>45268</id>
+      </contributor>
+      <minor />
+      <comment>interwikis: +[[ie:august]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{also|August}}
+==English==
+
+===Pronunciation===
+* {{a|RP}} {{IPA|/ɔːˈɡʌst/|lang=en}}
+* {{a|US}} {{IPA|/ɔːˈɡʌst/|/əˈɡʌst/|lang=en}}
+* {{audio|en-us-august.ogg|Audio (US)|lang=en}}
+* {{rhymes|ʌst|lang=en}}
+
+===Etymology 1===
+From {{etyl|la|en}} {{term|augustus||majestic, venerable|lang=la}}.
+
+====Adjective====
+{{en-adj|er|more}}
+
+# [[noble|Noble]], [[venerable]], [[majestic]], [[awe-inspiring]], often of the highest social class {{qualifier|sometimes used ironically}}.
+#: ''an '''august''' patron of the arts''
+# Of noble birth.
+#: '''''august''' lineage''
+
+=====Translations=====
+{{trans-top|noble, majestic, awe-inspiring}}
+* Bulgarian: {{t+|bg|ца́рствен}}, {{t+|bg|вели́чествен}}
+* Finnish: {{t|fi|ylevä}}
+{{trans-mid}}
+* Russian: {{t+|ru|вели́чественный}}, {{t+|ru|велича́вый}}, {{t+|ru|ца́рственный}}
+* Spanish: {{t+|es|majestuoso|m}}, {{t|es|augusto}}
+{{trans-bottom}}
+
+{{trans-top|of noble birth}}
+* Bulgarian: {{t+|bg|благоро́ден}}
+* Finnish: {{t+|fi|ylhäinen}}
+{{trans-mid}}
+* Russian: {{t+|ru|благоро́дный|sc=Cyrl}}
+{{trans-bottom}}
+
+=====Derived terms=====
+* [[augustly]]
+* [[augustness]]
+
+=====Related terms=====
+* [[Augustine]]
+* [[Augustinian]]
+
+===Etymology 2===
+From [[August]]
+
+====Verb====
+{{en-verb}}
+
+# To make ripe
+# To bring to realisation
+
+===Anagrams===
+* [[Tausug#English|Tausug]]
+
+----
+
+==Danish==
+
+===Pronunciation===
+* {{IPA|/avɡɔst/|[ɑwˈɡ̊ɔsd̥]|lang=da}}
+
+===Noun===
+{{head|da|noun|g=c}}
+
+# [[August]] {{gloss|the eighth month of the Gregorian calendar}}
+
+===See also===
+* {{list:Gregorian calendar months/da}}
+
+----
+
+==Estonian==
+{{wikipedia|lang=et}}
+
+===Etymology===
+From {{etyl|de|et}} {{term|lang=de|August}}.
+
+===Noun===
+{{et-noun}}
+
+# [[August]]
+
+====Inflection====
+{{rfinfl|et|noun}}
+
+====Synonyms====
+* {{l|et|lõikuskuu}}
+* {{l|et|põimukuu}}
+* {{l|et|viljakuu}}
+* {{l|et|rukkikuu}}
+* {{l|et|mädakuu}}
+
+====See also====
+* {{list:Gregorian calendar months/et}}
+
+[[Category:et:Months]]
+
+----
+
+==Faroese==
+
+===Noun===
+{{fo-noun|m}}
+
+# [[August]] {{gloss|month of the Gregorian calendar}}
+
+===See also===
+* {{list:Gregorian calendar months/fo}}
+
+----
+
+==Interlingua==
+
+===Noun===
+{{ia-noun|es}}
+
+# [[August]]
+
+[[Category:ia:Months]]
+
+----
+
+==Interlingue==
+
+===Noun===
+{{head|ie|noun}}
+
+# [[August]]
+
+[[Category:ie:Months]]
+
+----
+
+==Norwegian==
+
+===Noun===
+{{head|no|noun}}
+
+# [[August]]
+
+===See also===
+* {{list:Gregorian calendar months/no}}
+
+----
+
+==North Frisian==
+
+===Etymology===
+From {{etyl|la|frr}} {{m|la|augustus}}.
+
+===Noun===
+{{head|frr|noun|g=m}}
+
+# {{context|Föhr-Amrum dialect|lang=frr}} {{l|en|August}}
+
+====See also====
+* ''months of the year in Föhr-Amrum North Frisian'': {{l|frr|janewoore}}, {{l|frr|febrewoore}}, {{l|frr|marts}}, {{l|frr|april}}, {{l|frr|mei}}, {{l|frr|jüüne}}, {{l|frr|jüüle}}, '''august''', {{l|frr|september}}, {{l|frr|oktuuber}}, {{l|frr|nofember}}, {{l|frr|deetsember}}
+
+[[Category:frr:Months]]
+[[Category:frr:Time]]
+
+----
+
+==Romanian==
+
+===Etymology 1===
+{{loanword|la|lang=ro}} ({{m|la|mensis}}) {{term|augustus|lang=la}}.
+
+====Noun====
+{{ro-noun|m}}
+
+# [[August]]
+
+=====Synonyms=====
+* {{l|ro|gustar}} {{qual|colloquial|popular}}
+
+====See also====
+* {{list:Gregorian calendar months/ro}}
+
+===Etymology 2===
+From {{etyl|fr|ro}} {{term|auguste|lang=fr}}.
+
+====Adjective====
+{{head|ro|adjective}}
+
+# {{l|en|august}}, [[majestic]], [[venerable]]
+
+=====Synonyms=====
+* {{l|ro|slăvit}}, {{l|ro|preamărit}}
+
+[[Category:ro:Months]]
+
+----
+
+==Serbo-Croatian==
+
+===Alternative forms===
+* {{l|sh|avgust|sc=Latn}} {{qualifier|Serbia}}
+
+===Noun===
+{{sh-noun|g=m|r|аугуст}}
+
+# {{context|Bosnia|lang=sh}} [[August]]
+
+====Synonyms====
+* {{l|sh|kolovoz}} {{qualifier|Croatia}}
+
+[[Category:sh:Months]]
+
+----
+
+==Slovak==
+
+===Noun===
+{{sk-noun|g=m}}
+
+# [[August]]
+
+===External links===
+* {{R:SDK}}
+
+[[Category:sk:Months]]
+
+----
+
+==Sundanese==
+
+===Noun===
+{{head|su|noun}}
+
+# [[August]]
+
+[[Category:su:Months]]
+
+[[af:august]]
+[[ang:august]]
+[[az:august]]
+[[da:august]]
+[[de:august]]
+[[et:august]]
+[[el:august]]
+[[es:august]]
+[[eu:august]]
+[[fa:august]]
+[[fr:august]]
+[[gl:august]]
+[[ko:august]]
+[[hy:august]]
+[[hr:august]]
+[[io:august]]
+[[ie:august]]
+[[it:august]]
+[[kn:august]]
+[[csb:august]]
+[[sw:august]]
+[[ku:august]]
+[[lo:august]]
+[[la:august]]
+[[lv:august]]
+[[lb:august]]
+[[lt:august]]
+[[li:august]]
+[[hu:august]]
+[[mg:august]]
+[[ml:august]]
+[[mn:august]]
+[[my:august]]
+[[nl:august]]
+[[ja:august]]
+[[no:august]]
+[[nn:august]]
+[[oc:august]]
+[[ps:august]]
+[[km:august]]
+[[pl:august]]
+[[pt:august]]
+[[ro:august]]
+[[ru:august]]
+[[sm:august]]
+[[sk:august]]
+[[so:august]]
+[[fi:august]]
+[[sv:august]]
+[[ta:august]]
+[[tt:august]]
+[[te:august]]
+[[th:august]]
+[[chr:august]]
+[[tr:august]]
+[[vi:august]]
+[[zh:august]]</text>
+      <sha1>q6kk0l4avvtyb1qxrq99jv8jpuneq2q</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Appendix:Proto-Indo-European/ǵʰuto-</title>
+    <ns>100</ns>
+    <id>481078</id>
+    <revision>
+      <id>34256467</id>
+      <parentid>34256465</parentid>
+      <timestamp>2015-08-24T18:35:20Z</timestamp>
+      <contributor>
+        <username>CodeCat</username>
+        <id>21371</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{reconstructed}}
+==Proto-Indo-European==
+{{wikipedia|god (word)}}
+===Etymology===
+Participle of {{m|ine-pro|*ǵʰew-||pour, libate}} or {{m|ine-pro|*ǵʰaw-}}, {{m|ine-pro|*ǵʰew-||call, invoke}}.
+
+===Noun===
+{{ine-noun}}
+
+# [[invoked]]
+# [[poured]]
+
+====Descendants====
+* Germanic: {{l|gem-pro|*gudą||god, deity}}
+* Hellenic:
+** Ancient Greek: {{l|grc|χυτός||poured}}
+* Indo-Iranian:
+** Indo-Aryan:
+*** Sanskrit: {{l|sa|होतृ|tr=hótṛ}} (with unexplained -o- and -r-)</text>
+      <sha1>r1a2a364t5tnboytg3r9bsy3fr1fgh1</sha1>
+    </revision>
+  </page>
+</mediawiki>
