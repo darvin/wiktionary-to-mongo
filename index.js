@@ -8,27 +8,23 @@ var XmlStream = require('xml-stream')
 var wictionaryParser= require("wiktionary-parser");
 var prettyjson = require('prettyjson');
 
+var MongoClient = require('mongodb').MongoClient;
 
+function loadDb(callback) {
+    MongoClient.connect('mongodb://127.0.0.1:27017/wiktionaryToMongo', function(err, db) {
+      db.collection('wiktionaryDump').ensureIndex({title:1, namespace:1}, {unique:true}, function(err,res) {
+        callback(err, db);
+      });
+    });
 
-var co = require("co");
-var comongo = require('co-mongo');
+}
 
-comongo.configure({
-    host: '127.0.0.1',
-    port: 27017,
-    name: 'wiktionaryToMongo',
-    pool: 10,
-    collections: ['wiktionaryDump']
-});
-
-var loadWiktDumpToMongo = function *(file, skip,limit, show, verbose, justCount) {
+var loadWiktDumpToMongo = function (db, file, opts, callback) {
+  opts.skip = opts.skip || 0;
   var stream = fs.createReadStream(file);
-
   var count = 0;
-
-  var db = yield comongo.get();
-  var collection = db.wiktionaryDump;
-  yield collection.ensureIndex({title:1, namespace:1}, {unique:true});
+  var countSaved = 0;
+  var collection = db.collection('wiktionaryDump');
 
   var xml = new XmlStream(stream);
   xml._preserveAll=true //keep newlines
@@ -40,35 +36,38 @@ var loadWiktDumpToMongo = function *(file, skip,limit, show, verbose, justCount)
     process.stdout.clearLine();  // clear current text
     process.stdout.cursorTo(0);  // move cursor to beginning of line
 
-    var verb = count<skip ? "Skipping" : "Processing";
+    var verb = opts.count<opts.skip ? "Skipping" : "Processing";
 
     process.stdout.write(verb + " document" + count);  // write text
   }, 1000);
 
-  var quitting = false;
+  var inputFinished = false;
+  var outputQueue = new Set();
 
-  var waitAndQuit = function() {
-    if (quitting) {
-      return;
+
+  var quitIfDone = function(){
+    console.log("Truijn to quit ", inputFinished, outputQueue.size);
+    if (inputFinished && outputQueue.size==0){
+      console.log("quit");
+      clearInterval(statusLoggingInterval);
+      callback(null, {
+        count:count,
+        countSaved:countSaved
+      });
     }
-    quitting = true;
-    setTimeout(function*(){ //let the remaining async writes finish up
-      console.log("Quitting...");
-      yield db.close();
-      process.quit();
-    },6000)
   }
 
 
   xml.on('endElement: page', function(page) { 
-    co(function *() {
-      if (!quitting) {
-        count ++; 
 
-      }
-      if (count>=skip+limit) {
-        waitAndQuit(); 
-      } else if (count>skip && !justCount) try {
+      if (!inputFinished) {
+        count ++; 
+      } 
+      if (opts.limit&& (count>=opts.skip+opts.limit)) {
+        inputFinished = true; 
+        quitIfDone();
+
+      } else if (count>opts.skip && !opts.justCount) {
         var namespaceName = null;
         var title = page.title;
         if (page.ns!="0") {
@@ -80,9 +79,7 @@ var loadWiktDumpToMongo = function *(file, skip,limit, show, verbose, justCount)
           wictionaryParser.getSpecialNamespaces().hasOwnProperty(namespaceName)){
             var script=page.revision.text["$text"] || '';
             var ns = wictionaryParser.getLangCodeForNamespace(namespaceName)||null;
-            if (script.length<3000&&skipSmall) {
-              return;
-            }
+
             
             var doc = {
               title:title,
@@ -91,44 +88,36 @@ var loadWiktDumpToMongo = function *(file, skip,limit, show, verbose, justCount)
             }
 
             // console.log("doc", doc);
-            
-            var r = yield collection.insert(doc);
+            var idd = title+"|"+ns;
+            outputQueue.add(idd);
+            collection.insert(doc, function(err, r){
+              outputQueue.delete(idd);
+              countSaved ++;
+              quitIfDone();
+            });
             if (verbose) {
               // console.log("Written to db: ", prettyjson.render(r));
 
             }
-        } else if (namespaceName) {
-          if (verbose) {
-            // console.log("Article from ignored namespace: ", namespaceName);
-          }
-        }
-      } catch (err) {
-        if (err.name=="MongoError" && err.code==11000) {
-          //dup, its ok
-        } else {
-          console.log(page.title, "error:", err);
-        }
-
+        } 
       }
-    });
   });
 
-  xml.on('error', function*(message) {
+  xml.on('error', function(message) {
     console.log('Parsing as ' + (encoding || 'auto') + ' failed: ' + message);
-    waitAndQuit();
   });
 
   xml.on('end', function(message) {
     console.log('Dump processing finished')
-    waitAndQuit();
+    inputFinished = true;
   });
+
 
 }
 
 
 exports.loadWiktDumpToMongo = loadWiktDumpToMongo;
 
-var skipSmall = argv.skip_small;
 var skip = argv.skip || 0;
 var limit = argv.limit;
 var show = argv.show;
@@ -147,12 +136,14 @@ function onerror(err) {
 }
 
 var main = function(){
-  co(function *() {
     console.log("starting");
     console.log("params: ", file, skip,limit, show, verbose, justCount);
-    yield loadWiktDumpToMongo(file, skip,limit, show, verbose, justCount);
+    loadDb(function(err, db) {
+      loadWiktDumpToMongo(db, file, {skip:skip,limit:limi, show:show, verbose:verbose, justCount:justCount},function(err, res){
+        db.close();
+      });
 
-  }).catch(onerror);
+    })
 }
 
 if (require.main === module) {
