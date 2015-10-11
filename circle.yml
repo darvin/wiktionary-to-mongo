@@ -2,9 +2,9 @@ machine:
   node:
     version: 0.12
 dependencies: 
-	cache_directories:
-    - ./build
+  cache_directories:
+  - ./build
 
 test:
   post:
-   - ./build_mongo_dump.sh
+  - ./build_mongo_dump.sh
