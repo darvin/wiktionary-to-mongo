@@ -1,3 +1,10 @@
 machine:
   node:
-    version: 4.1.2
+    version: 0.12
+dependencies: 
+	cache_directories:
+    - ./build
+
+test:
+  post:
+   - ./build_mongo_dump.sh
